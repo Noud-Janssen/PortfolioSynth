@@ -183,7 +183,7 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    color: var(--black);
+    color: #ffff;
     font-size: var(--fontsizeKey);
 
     cursor: pointer;
@@ -205,7 +205,7 @@ h2 {
     border: var(--green) var(--bordMarKey) solid;
     border-radius: 100px;
     font-size: var(--fontsizeMed);
-    color: var(--black);
+    color: #ffff;
 
     cursor: pointer;
     user-select: none;
