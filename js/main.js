@@ -35,20 +35,19 @@ function usenav() {
             document.querySelector('#navbar').style.transform = 'translatey(100%)'
             document.querySelector('.keyboard').style.transform = 'translatey(150%)'
             document.querySelector('#helplogo').style.transform = 'translatex(20vw)'
-            document.querySelector('#butbar').style.backgroundColor = 'var(--pink)'
-            document.querySelector('#butkey').style.background = 'none'
             document.querySelector('#pagecontent').style.top = '15vh'
             document.querySelector('#pagecontent').style.height = '80vh'
+            document.querySelector('#usenavbut').style.transform = 'translatex(100%)'
             navopen = false;
         }
         else {
             document.querySelector('#navbar').style.transform = 'translatey(0%)'
             document.querySelector('.keyboard').style.transform = 'translatey(0%)'
             document.querySelector('#helplogo').style.transform = 'translatex(0%)'
-            document.querySelector('#butkey').style.backgroundColor = 'var(--pink)'
-            document.querySelector('#butbar').style.background = 'none'
             document.querySelector('#pagecontent').style.top = '5vh'
             document.querySelector('#pagecontent').style.height = 'calc(95vh - var(--heightKeyB))'
+            document.querySelector('#usenavbut').style.transform = 'translatex(0%)'
+            
             navopen = true;
         }
     }
