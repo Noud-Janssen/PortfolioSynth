@@ -56,8 +56,8 @@ nav {
     align-items: center;
 
     position: fixed;
-    top: -0.1vh;
-    left: -0.1vw;
+    top: 0vh;
+    left: 0vw;
 
     transition-duration: 0.5s;
     cursor: pointer;
