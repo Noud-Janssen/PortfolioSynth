@@ -7,9 +7,11 @@ function unlocknav() {
 
 
 function keypress(clicked_id) {
+
+
+
     var key = document.querySelector('#' + clicked_id);
     var color;
-
 
     var check = document.querySelector('.keyblack#' + clicked_id);
     if (check == null) {
@@ -26,6 +28,7 @@ function keypress(clicked_id) {
         key.style.transitionDuration = '1s';
         key.style.backgroundColor = 'var(--black)';
     }, 1); 
+    setpage(clicked_id)
 }
 
 var navopen = true;
@@ -99,12 +102,18 @@ document.onkeypress = function(evt) {
     evt = evt || window.event;
     var charCode = evt.keyCode || evt.which;
     var charStr = String.fromCharCode(charCode);
+    keypress(charStr);
+    
+};
 
-    if (charStr == 'a' || charStr == 's' || charStr == 'd' || charStr == 'f' || charStr == 'g' || charStr ==  'h' || charStr == 'j') {
+function setpage(id) {
+    if (id == 'a' || id == 's' || id == 'd' || id == 'f' || id == 'g' || id ==  'h' || id == 'j') {
         var element = document.querySelectorAll('.content');
         for (var i = 0 ; i<element.length ; i++) {
             element[i].style.opacity = '0';
         }
-        document.querySelector('.' + charStr).style.opacity = '1';
+
+        document.querySelector('.' + id).style.opacity = '1';
+
     }
-};
+}

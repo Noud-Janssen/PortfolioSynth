@@ -112,6 +112,10 @@ h2 {
     animation-fill-mode: forwards;
 }
 
+.nonactive {
+    opacity: 0;
+}
+
 .keyboard {
     position: fixed;
     left: calc(50vw - (var(--widthKeyB) / 2));
@@ -225,7 +229,7 @@ h2 {
     align-items: center;
 
 }
-#fs {
+#t {
     margin-left: 90px;
 }
 
