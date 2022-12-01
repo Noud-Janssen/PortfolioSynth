@@ -44,7 +44,6 @@ nav {
     color: var(--green);
 
     background-color: var(--pink);
-    rotate: 90deg;
 
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -59,7 +58,7 @@ nav {
     top: 0vh;
     left: 0vw;
 
-    transition-duration: 0.5s;
+    transition-duration: 1s;
     cursor: pointer;
 }
 

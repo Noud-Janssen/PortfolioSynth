@@ -37,7 +37,7 @@ function usenav() {
             document.querySelector('#helplogo').style.transform = 'translatex(20vw)'
             document.querySelector('#pagecontent').style.top = '15vh'
             document.querySelector('#pagecontent').style.height = '80vh'
-            document.querySelector('#usenavbut').style.transform = 'translatex(100%)'
+            document.querySelector('#usenavbut').style.transform = 'translatey(100%)'
             navopen = false;
         }
         else {
@@ -46,7 +46,7 @@ function usenav() {
             document.querySelector('#helplogo').style.transform = 'translatex(0%)'
             document.querySelector('#pagecontent').style.top = '5vh'
             document.querySelector('#pagecontent').style.height = 'calc(95vh - var(--heightKeyB))'
-            document.querySelector('#usenavbut').style.transform = 'translatex(0%)'
+            document.querySelector('#usenavbut').style.transform = 'translatey(0%)'
             
             navopen = true;
         }
