@@ -28,7 +28,7 @@ function keypress(clicked_id) {
         key.style.transitionDuration = '1s';
         key.style.backgroundColor = 'var(--black)';
     }, 1); 
-    setpage(clicked_id)
+    setpage(clicked_id) 
 }
 
 var navopen = true;
