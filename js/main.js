@@ -93,3 +93,18 @@ function usehelp() {
         }
     }
 }
+
+document.onkeypress = function(evt) {
+
+    evt = evt || window.event;
+    var charCode = evt.keyCode || evt.which;
+    var charStr = String.fromCharCode(charCode);
+
+    if (charStr == 'a' || charStr == 's' || charStr == 'd' || charStr == 'f' || charStr == 'g' || charStr ==  'h' || charStr == 'j') {
+        var element = document.querySelectorAll('.content');
+        for (var i = 0 ; i<element.length ; i++) {
+            element[i].style.opacity = '0';
+        }
+        document.querySelector('.' + charStr).style.opacity = '1';
+    }
+};
