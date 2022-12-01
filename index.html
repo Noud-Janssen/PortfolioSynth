@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noud Janssen</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/main.js"></script>
+</head>
+<body onload="unlocknav()">
+    <main>
+        <nav class="nohelp" id="navbar">
+        </nav>
+
+        <button class="nohelp" onclick="usenav()" id="usenavbut">
+            <div class="usenavdiv" id="butbar">Bar</div>
+            <div class="usenavdiv" id="butkey">Keys</div>
+        </button>
+
+        <div>
+            <h2 id="t1">You can navigate using the keyboard!</h2>
+            <h2 class="anstep2" id="t2">Or using the navbar on the top.</h2>
+        </div>
+
+        <div class="nohelp" id="pagecontent">
+            <div class="nohelp content" id="home">
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="blackkeys">
+                <div onclick="keypress(this.id)" class="keyblack" id="cs">W</div>
+                <div onclick="keypress(this.id)" class="keyblack" id="ds">E</div>
+                <div onclick="keypress(this.id)" class="keyblack" id="fs">T</div>
+                <div onclick="keypress(this.id)" class="keyblack" id="gs">Y</div>
+                <div onclick="keypress(this.id)" class="keyblack" id="as">U</div>
+            </div>
+            <div class="whitekeys">
+                <div onclick="keypress(this.id)" class="keywhite" id="c">A</div>  
+                <div onclick="keypress(this.id)" class="keywhite" id="d">S</div>
+                <div onclick="keypress(this.id)" class="keywhite" id="e">D</div>
+                <div onclick="keypress(this.id)" class="keywhite" id="f">F</div>
+                <div onclick="keypress(this.id)" class="keywhite" id="g">G</div>
+                <div onclick="keypress(this.id)" class="keywhite" id="a">H</div>
+                <div onclick="keypress(this.id)" class="keywhite" id="b">J</div> 
+
+            </div>
+
+        </div>
+        <div onclick="usehelp()" id="helplogo">?</div>
+        <div id="helpoverlay">
+            <div>Next Item previous Item</div>
+            <div>Home</div>
+        </div>
+    </main>
+</body>

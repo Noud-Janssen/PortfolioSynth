@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition-duration: 1s;
+    color: white;
+}
+
+:root {
+    --black: #011627;
+    --pink: #FF7B9C;
+    --green: #9DD9D2;
+    --widthKey: 40px;
+    --heightKey: 100px;
+    --bordMarKey: 10px;
+
+    --heightKeyB: 280px;
+    --widthKeyB: 560px;
+
+    --fontsizeKey: 35px;
+    --fontsizeMed: 50px;
+}
+
+
+body {
+    background-color: var(--black);
+}
+
+nav {
+    background-color: var(--pink);
+    width: 100vw;
+    height: 10vh;
+
+    position: fixed;
+    top: -10vh;
+
+    animation: flyinnavbar 1.5s linear 2.5s 2 alternate none;
+    transition-duration: 1s;
+}
+
+#usenavbut {
+    border: none;
+    background: none;
+    color: var(--green);
+    width: 5vw;
+    height: 10vh;
+    margin-top: 4.85vh;
+
+    position: fixed;
+    top: 10vh;
+    left: -3vw;
+
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#usenavbut:hover {
+    transform: translatex(40%);
+}
+
+.usenavdiv {
+    width: 100%;
+    height: 50%;
+}
+
+
+#butkey {
+    background-color: var(--pink);
+}
+
+
+.navbut {
+    background-color: none;
+    width: 5%;
+    height: 100%;
+}
+
+
+h2 {
+    color: var(--pink);
+    text-decoration: underline;
+    width: 300px;
+
+    position: fixed;
+    left: calc(50vw - 150px);
+    opacity: 0;
+
+    animation: flyintitle 1s ease 1s 2 alternate none;
+}
+
+#t1 {
+    bottom: calc(5% + 300px);
+}
+#t2 {
+    top: calc(10% + 20px);
+}
+
+.anstep2 {
+    animation-delay: 3s;
+}
+
+#pagecontent {
+    width: 80vw;
+    height: calc(95vh - var(--heightKeyB));
+
+    position: fixed;
+    top: 5vh;
+    left: 10vw;
+
+    border-left: var(--green) solid 10px;
+    
+    opacity: 0;
+
+    animation-name: opa;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.keyboard {
+    position: fixed;
+    left: calc(50vw - (var(--widthKeyB) / 2));
+    bottom: 0vh;
+    transition-duration: 1s;
+    width: var(--widthKeyB);
+    height: var(--heightKeyB);
+}
+
+.whitekeys {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items:flex-start;
+	align-content: flex-start;
+
+    animation-name: flyinkeys;
+    animation-duration: 1.5s;
+}
+
+.blackkeys {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+    padding-left: var(--widthKey);
+
+    animation-name: flyinkeys;
+    animation-duration: 1s;
+}
+
+.keywhite {
+    width: var(--widthKey);
+    height: var(--heightKey);
+    background-color: #011627;
+    border: var(--pink) var(--bordMarKey) solid;
+    transition-duration: 1s;
+    margin: var(--bordMarKey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--green);
+    font-size: var(--fontsizeKey);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.keyblack {
+    width: var(--widthKey);
+    height: var(--heightKey);
+    background-color: #011627;
+    border: var(--green) var(--bordMarKey) solid;
+    transition-duration: 1s;
+    margin: var(--bordMarKey);
+    margin-bottom: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--black);
+    font-size: var(--fontsizeKey);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+#helplogo {
+    min-width: 30px;
+    min-height: 30px;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    border: var(--green) var(--bordMarKey) solid;
+    border-radius: 100px;
+    font-size: var(--fontsizeMed);
+    color: var(--black);
+
+    cursor: pointer;
+    user-select: none;
+
+    z-index: 101;
+}
+
+#helpoverlay {
+    width: 80vw;
+    height: 480px;
+
+    position: fixed;
+    top: -100vh ;
+    left: 10vw;
+    z-index: 100;
+
+    opacity: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#fs {
+    margin-left: 90px;
+}
+
+@keyframes flyinkeys {
+    from {transform: translateY(500px);
+    }
+    to {transform: translateY(0px);}
+}
+
+@keyframes flyintitle {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes flyinnavbar {
+    0% {transform: translateY(0%);}
+    75% {transform: translateY(100%);}
+    100% {transform: translateY(100%);}
+} 
+
+@keyframes opa {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

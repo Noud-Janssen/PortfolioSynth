@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --widthKey: 20px;
+        --heightKey: 50px;
+        --bordMarKey: 5px; 
+
+        --heightKeyB: 140px;
+        --widthKeyB: 280px;
+
+        --fontsizeKey: 0px;
+        --fontsizeMed: 25px;
+    }
+
+    #helplogo {
+        bottom: var(--heightKeyB);
+    }
+
+    #fs {
+        margin-left: 45px;
+    }
+}
