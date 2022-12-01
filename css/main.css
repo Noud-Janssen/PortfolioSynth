@@ -45,11 +45,11 @@ nav {
 
     background-color: var(--pink);
 
-    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 
-    width: 5vw;
-    height: 5vw;
+    width: 5vh;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
