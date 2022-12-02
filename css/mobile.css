@@ -12,6 +12,16 @@
         --fontsizeMed: 25px;
     }
 
+    .content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .col {
+        width: 100%;
+        height: 48%;
+    }
+
     #helplogo {
         bottom: var(--heightKeyB);
     }

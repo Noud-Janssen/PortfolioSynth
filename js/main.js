@@ -40,6 +40,8 @@ function usenav() {
 
 }
 
+
+var selectpage ="a";
 var helpopen = true;
 function usehelp() {
     if (navunlock == true) {
@@ -56,22 +58,24 @@ function usehelp() {
             setTimeout(() => {
                document.querySelector('#helpoverlay').style.opacity = '1';                
             }, 1000);
-            helpopen = false
+            helpopen = false;
+            keyunlock = false;
         }
         else {
             
             
             document.querySelector('#helpoverlay').style.opacity = '0';
             setTimeout(() => {
-                for (i = 0 ; i < nohelp.length ; i++) {
-                    nohelp[i].style.opacity = '1';
-                }
+                document.querySelector('#navbar').style.opacity = '1';
+                document.querySelector('#usenavbut').style.opacity = '1';
+                document.querySelector("." + selectpage).style.opacity = '1';
                 document.querySelector('#pagecontent').style.height = 'calc(95vh - var(--heightKeyB))';
                 document.querySelector('.keyboard').style.bottom = '0vh';
                 document.querySelector('#usenavbut').style.left = '0vw';
                 document.querySelector('#helpoverlay').style.top = '-100vh';      
              }, 500);
-            helpopen = true
+            helpopen = true;
+            keyunlock = true;
         }
     }
 }
@@ -103,12 +107,16 @@ function keypress(clicked_id) {
 
 }
 
+var keyunlock = true;
 document.onkeypress = function(evt) {
 
     evt = evt || window.event;
     var charCode = evt.keyCode || evt.which;
     var charStr = String.fromCharCode(charCode);
-    keypress(charStr);
+
+    if (keyunlock == true) {
+        keypress(charStr);  
+    }
     
 };
 
@@ -117,9 +125,13 @@ function setpage(id) {
         var element = document.querySelectorAll('.content');
         for (var i = 0 ; i<element.length ; i++) {
             element[i].style.opacity = '0';
+            element[i].style.transform = 'translatex(0)'
         }
 
-        document.querySelector('.' + id).style.opacity = '1';
+        var selectid = document.querySelector('.' + id)
+        selectid.style.opacity = '1';
+        selectid.style.transform = 'translatex(-90vw)';
+        selectpage = id;
 
     }
 }

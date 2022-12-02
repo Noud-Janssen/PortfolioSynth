@@ -94,7 +94,7 @@ h2 {
 }
 
 #pagecontent {
-    width: 80vw;
+    width: calc(80vw - 15px);
     height: calc(95vh - var(--heightKeyB));
 
     position: fixed;
@@ -110,6 +110,28 @@ h2 {
     animation-duration: 1s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
+}
+
+.content {
+    transition-duration: 0.5s;
+
+    position: fixed;
+    width: inherit;
+    padding-left: 15px;
+    left: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    width: 48%;
+    height: 100%;
+}
+
+#home {
+    transform: translateX(-90vw);
 }
 
 .nonactive {
@@ -163,7 +185,7 @@ h2 {
     align-items: center;
 
     color: var(--green);
-    font-size: var(--fontsizeKey);
+    font-size: 0px;
 
     cursor: pointer;
     user-select: none;
@@ -183,7 +205,7 @@ h2 {
     align-items: center;
 
     color: #ffff;
-    font-size: var(--fontsizeKey);
+    font-size: 0px;
 
     cursor: pointer;
     user-select: none;
