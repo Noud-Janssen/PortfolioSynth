@@ -38,6 +38,13 @@ nav {
 
     animation: flyinnavbar 1.5s linear 2.5s 2 alternate none;
     transition-duration: 1s;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 #usenavbut {
@@ -68,9 +75,16 @@ nav {
 
 
 .navbut {
-    background-color: none;
-    width: 5%;
-    height: 100%;
+    border: none;
+    background: none;
+    width: 10vh;
+    height: 10vh;
+    cursor: pointer;
+}
+
+.navbut:hover {
+    background-color: var(--green);
+    border-radius: 40px;
 }
 
 /**Intro Animatie**/
