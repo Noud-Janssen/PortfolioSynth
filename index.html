@@ -11,18 +11,20 @@
 </head>
 <body onload="unlocknav()">
     <main>
+
+        <!--Navigatie bar-->
         <nav class="nohelp" id="navbar">
         </nav>
-
+        <!--Navigatie selectie-->
         <div class="nohelp" onclick="usenav()" id="usenavbut">
             <div>N</div>
         </div>
-
+        <!--Intro animatie-->
         <div>
             <h2 id="t1">You can navigate using the keyboard!</h2>
-            <h2 class="anstep2" id="t2">Or using the navbar on the top.</h2>
+            <h2 id="t2">Or using the navbar on the top.</h2>
         </div>
-
+        <!--Main content-->
         <div class="nohelp" id="pagecontent">
             <div class="nohelp content a" id="home">
                 <div class="col">
@@ -56,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <!--Navigatie keyboard-->
         <div class="keyboard">
             <div class="blackkeys">
                 <div onclick="keypress(this.id)" class="keyblack" id='w'>W</div>
@@ -76,6 +79,7 @@
             </div>
 
         </div>
+        <!--Help button-->
         <div onclick="usehelp()" id="helplogo">?</div>
         <div id="helpoverlay">
             <div>Next Item previous Item</div>

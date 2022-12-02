@@ -26,6 +26,8 @@ body {
     background-color: var(--black);
 }
 
+
+/**Navigatie**/
 nav {
     background-color: var(--pink);
     width: 100vw;
@@ -69,7 +71,7 @@ nav {
     height: 100%;
 }
 
-
+/**Intro Animatie**/
 h2 {
     color: var(--pink);
     text-decoration: underline;
@@ -83,16 +85,37 @@ h2 {
 }
 
 #t1 {
-    bottom: calc(5% + 300px);
+    bottom: calc(5vh + 300px);
 }
 #t2 {
-    top: calc(10% + 20px);
-}
-
-.anstep2 {
+    top: calc(10vh + 20px);
     animation-delay: 3s;
 }
 
+@keyframes flyinkeys {
+    from {transform: translateY(500px);
+    }
+    to {transform: translateY(0px);}
+}
+
+@keyframes flyintitle {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes flyinnavbar {
+    0% {transform: translateY(0%);}
+    75% {transform: translateY(100%);}
+    100% {transform: translateY(100%);}
+} 
+
+@keyframes opa {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/**Main content**/
 #pagecontent {
     width: calc(80vw - 15px);
     height: calc(95vh - var(--heightKeyB));
@@ -138,6 +161,7 @@ h2 {
     opacity: 0; 
 }
 
+/**Navigatie keyboard**/
 .keyboard {
     position: fixed;
     left: calc(50vw - (var(--widthKeyB) / 2));
@@ -211,6 +235,12 @@ h2 {
     user-select: none;
 }
 
+#t {
+    margin-left: 90px;
+}
+
+
+/**Help button**/
 #helplogo {
     min-width: 30px;
     min-height: 30px;
@@ -250,29 +280,4 @@ h2 {
     justify-content: space-between;
     align-items: center;
 
-}
-#t {
-    margin-left: 90px;
-}
-
-@keyframes flyinkeys {
-    from {transform: translateY(500px);
-    }
-    to {transform: translateY(0px);}
-}
-
-@keyframes flyintitle {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes flyinnavbar {
-    0% {transform: translateY(0%);}
-    75% {transform: translateY(100%);}
-    100% {transform: translateY(100%);}
-} 
-
-@keyframes opa {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
