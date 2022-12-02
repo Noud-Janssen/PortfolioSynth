@@ -56,6 +56,8 @@ nav {
     justify-content: center;
     align-items: center;
 
+    animation-timing-function: linear;
+
     position: fixed;
     top: 0vh;
     left: 0vw;
@@ -85,7 +87,7 @@ h2 {
 }
 
 #t1 {
-    bottom: calc(5vh + 300px);
+    bottom: calc(5vh + var(--heightKeyB));
 }
 #t2 {
     top: calc(10vh + 20px);
@@ -213,6 +215,8 @@ h2 {
 
     cursor: pointer;
     user-select: none;
+
+    transition-duration: 0.5s;
 }
 
 .keyblack {
@@ -233,6 +237,7 @@ h2 {
 
     cursor: pointer;
     user-select: none;
+    transition-duration: 0.5s;
 }
 
 #t {
@@ -266,7 +271,7 @@ h2 {
 
 #helpoverlay {
     width: 80vw;
-    height: 480px;
+    height: calc(var(--heightKeyB) * 2);
 
     position: fixed;
     top: -100vh ;
