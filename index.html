@@ -10,84 +10,81 @@
     <script src="js/main.js"></script>
 </head>
 <body onload="unlocknav()">
-    <main>
-
-        <!--Navigatie bar-->
-        <nav class="nohelp" id="navbar">
-            <button class="navbut" onclick="setpage('a')">Home</button>
-            <button class="navbut" onclick="setpage('s')">About Me</button>
-            <button class="navbut" onclick="setpage('d')">Projects</button>
-            <button class="navbut" onclick="setpage('f')">Contact</button>
-        </nav>
-        <!--Navigatie selectie-->
-        <div class="nohelp" onclick="usenav()" id="usenavbut">
-            <div>N</div>
+    <!--Navigatie bar-->
+    <nav class="nohelp" id="navbar">
+        <button class="navbut" onclick="setpage('a')">Home</button>
+        <button class="navbut" onclick="setpage('s')">About Me</button>
+        <button class="navbut" onclick="setpage('d')">Projects</button>
+        <button class="navbut" onclick="setpage('f')">Contact</button>
+    </nav>
+    <!--Navigatie selectie-->
+    <div class="nohelp" onclick="usenav()" id="usenavbut">
+        <div>N</div>
+    </div>
+    <!--Intro animatie-->
+    <div>
+        <h2 id="t1">You can navigate using the keyboard!</h2>
+        <h2 id="t2">Or using the navbar on the top.</h2>
+    </div>
+    <!--Main content-->
+    <main class="nohelp" id="pagecontent">
+        <div class="nohelp content a" id="home">
+            <div class="col">
+                <h1>Home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+            </div>
+            <div class="col"><img src="assets/piano roll1.png" alt=""></div>
         </div>
-        <!--Intro animatie-->
-        <div>
-            <h2 id="t1">You can navigate using the keyboard!</h2>
-            <h2 id="t2">Or using the navbar on the top.</h2>
-        </div>
-        <!--Main content-->
-        <div class="nohelp" id="pagecontent">
-            <div class="nohelp content a" id="home">
-                <div class="col">
-                    <h1>Home</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
-                </div>
-                <div class="col"><img src="assets/piano roll1.png" alt=""></div>
-            </div>
-            <div class="nohelp content s" id="aboutme">
-                <div class="col">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
-                </div>
-            </div>
-            <div class="nohelp content d" id="projects">
-                <div class="col">
-                    <h1>Projects</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
-                </div>
-            </div>
-            <div class="nohelp content f" id="contact">
-                <div class="col">
-                    <h1>Contact</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
-                </div>
-            </div>
-            <div class="nohelp content g" id="synth">
-                <div class="col">
-                    <h1>Synthesizer</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
-                </div>
+        <div class="nohelp content s" id="aboutme">
+            <div class="col">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
         </div>
-        <!--Navigatie keyboard-->
-        <div class="keyboard">
-            <div class="blackkeys">
-                <div onclick="keypress(this.id)" class="keyblack" id='w'>W</div>
-                <div onclick="keypress(this.id)" class="keyblack" id='e'>E</div>
-                <div onclick="keypress(this.id)" class="keyblack" id='t'>T</div>
-                <div onclick="keypress(this.id)" class="keyblack" id='y'>Y</div>
-                <div onclick="keypress(this.id)" class="keyblack" id='u'>U</div>
+        <div class="nohelp content d" id="projects">
+            <div class="col">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
-            <div class="whitekeys">
-                <div onclick="keypress(this.id)" class="keywhite" id='a'>A</div>  
-                <div onclick="keypress(this.id)" class="keywhite" id='s'>S</div>
-                <div onclick="keypress(this.id)" class="keywhite" id='d'>D</div>
-                <div onclick="keypress(this.id)" class="keywhite" id='f'>F</div>
-                <div onclick="keypress(this.id)" class="keywhite" id='g'>G</div>
-                <div onclick="keypress(this.id)" class="keywhite" id='h'>H</div>
-                <div onclick="keypress(this.id)" class="keywhite" id='j'>J</div> 
-
-            </div>
-
         </div>
-        <!--Help button-->
-        <div onclick="usehelp()" id="helplogo">?</div>
-        <div id="helpoverlay">
-            <div>Next Item previous Item</div>
-            <div>Home</div>
+        <div class="nohelp content f" id="contact">
+            <div class="col">
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+            </div>
+        </div>
+        <div class="nohelp content g" id="synth">
+            <div class="col">
+                <h1>Synthesizer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+            </div>
         </div>
     </main>
+    <!--Navigatie keyboard-->
+    <div class="keyboard">
+        <div class="blackkeys">
+            <div onclick="keypress(this.id)" class="keyblack" id='w'>W</div>
+            <div onclick="keypress(this.id)" class="keyblack" id='e'>E</div>
+            <div onclick="keypress(this.id)" class="keyblack" id='t'>T</div>
+            <div onclick="keypress(this.id)" class="keyblack" id='y'>Y</div>
+            <div onclick="keypress(this.id)" class="keyblack" id='u'>U</div>
+        </div>
+        <div class="whitekeys">
+            <div onclick="keypress(this.id)" class="keywhite" id='a'>A</div>  
+            <div onclick="keypress(this.id)" class="keywhite" id='s'>S</div>
+            <div onclick="keypress(this.id)" class="keywhite" id='d'>D</div>
+            <div onclick="keypress(this.id)" class="keywhite" id='f'>F</div>
+            <div onclick="keypress(this.id)" class="keywhite" id='g'>G</div>
+            <div onclick="keypress(this.id)" class="keywhite" id='h'>H</div>
+            <div onclick="keypress(this.id)" class="keywhite" id='j'>J</div> 
+
+        </div>
+
+    </div>
+    <!--Help button-->
+    <div onclick="usehelp()" id="helplogo">?</div>
+    <div id="helpoverlay">
+        <div>Next Item previous Item</div>
+        <div>Home</div>
+    </div>
 </body>
