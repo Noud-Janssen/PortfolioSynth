@@ -23,6 +23,7 @@ function usenav() {
             document.querySelector('#pagecontent').style.height = '80vh'
             document.querySelector('#usenavbut').style.transform = 'translatey(10vh)'
             navopen = false;
+            keyunlock = false;
         }
         else {
             document.querySelector('#navbar').style.transform = 'translatey(0)'
@@ -33,6 +34,7 @@ function usenav() {
             document.querySelector('#usenavbut').style.transform = 'translatey(0)'
             
             navopen = true;
+            keyunlock = true;
         }
     }
     
