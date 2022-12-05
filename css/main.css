@@ -158,6 +158,8 @@ h2 {
     width: inherit;
     padding-left: 15px;
     left: 100vw;
+
+    height: calc(95vh - var(--heightKeyB));
     
     display: flex;
     flex-direction: row;
@@ -167,6 +169,14 @@ h2 {
 .col {
     width: 48%;
     height: 100%;
+}
+
+.projectselect {
+    width: 40%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: red;
+
 }
 
 #home {
