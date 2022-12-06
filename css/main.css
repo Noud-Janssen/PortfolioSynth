@@ -160,10 +160,11 @@ h2 {
     left: 100vw;
 
     height: calc(95vh - var(--heightKeyB));
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .col {
@@ -171,12 +172,27 @@ h2 {
     height: 100%;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+    height: 100%;
+}
+
 .projectselect {
-    width: 40%;
-    height: 20%;
+    width: 20%;
+    height: 10%;
     border-radius: 20px;
     background-color: red;
+    margin: 10px;
 
+    transition-duration: 0.25s;
+
+}
+
+.projectselected {
+    width: 40%;
+    height: 20%;
 }
 
 #home {

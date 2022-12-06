@@ -61,13 +61,7 @@ function usehelp() {
             document.querySelector('#usenavbut').style.left = '-10vw';
 
             setTimeout(() => {
-                document.querySelector('#helpoverlay').style.opacity = '1'; 
-                for (i = 0 ; i < keywhite.length ; i++) {
-                    keywhite[i].style.fontSize = 'var(--fontsizeKey)'
-                }
-                for (i = 0 ; i < keyblack.length ; i++) {
-                    keyblack[i].style.fontSize = 'var(--fontsizeKey)'
-                }               
+                document.querySelector('#helpoverlay').style.opacity = '1';           
             }, 1000);
             helpopen = false;
             keyunlock = false;
@@ -132,9 +126,10 @@ document.onkeypress = function(evt) {
     if (keyunlock == true) {
         keypress(charStr);  
     }
-    
 };
 
+
+var selectedproject = "p1";
 function setpage(id) {
     if (id == 'a' || id == 's' || id == 'd' || id == 'f' || id == 'g' || id ==  'h' || id == 'j') {
         var element = document.querySelectorAll('.content');
@@ -149,4 +144,25 @@ function setpage(id) {
         selectpage = id;
 
     }
+    if (id == 't') {
+        selectedproject = selectedproject.split('p').pop();
+        if (selectedproject > 1) {
+            selectedproject--;
+        }
+        selectedproject = "p" + selectedproject;
+        setproject(selectedproject);
+    }
+    else if (id == "u") {
+        selectedproject = selectedproject.split('p').pop();
+        if (selectedproject < 6) {
+            selectedproject++;
+        }
+        selectedproject = "p" + selectedproject;
+        setproject(selectedproject);
+    }
+}
+function setproject(id) {
+    document.querySelector('.projectselected').classList.remove('projectselected');
+    document.querySelector('#' + id).classList.add('projectselected');
+    selectedproject = id;
 }
