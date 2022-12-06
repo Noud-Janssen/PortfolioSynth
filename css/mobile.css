@@ -22,6 +22,29 @@
         height: 100%;
     }
 
+    .row-20-mobile {
+        width: 100%;
+        height: 20%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projectselect {
+        height: 25%;
+        width: 15%;
+    }
+
+    .projectselected {
+        height: 50%;
+        width: 40%;
+    }
+
+    .row-80-mobile {
+        width: 100%;
+        height: 80%;
+    }
+
     #helplogo {
         bottom: var(--heightKeyB);
     }
