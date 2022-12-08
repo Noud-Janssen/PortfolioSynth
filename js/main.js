@@ -161,12 +161,29 @@ function setpage(id) {
         setproject(selectedproject);
     }
 }
+
+const projectTitle = [
+    "Mastermind",
+    "Project 2",
+    "Project 3",
+    "Project 4",
+    "Project 5",
+    "Project 6"
+]
+const projectPara = [
+    "Mastermind",
+    "Project 2",
+    "Project 3",
+    "Project 4",
+    "Project 5",
+    "Projct 6"
+]
+
 function setproject(id) {
     document.querySelector('.projectselected').classList.remove('projectselected');
     document.querySelector('#' + id).classList.add('projectselected');
     selectedproject = id;
-
-    if (selectedproject == "p1") {
-        document.querySelector('.projectselected').innerHTML = 'test'
-    }
+    projectIndex = selectedproject.split('p').pop() - 1;
+    document.querySelector('#projectParagraph').innerHTML = projectPara[projectIndex];
+    document.querySelector('#projectTitle').innerHTML = projectTitle[projectIndex];
 }

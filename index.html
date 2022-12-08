@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noud Janssen</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <script src="js/main.js"></script>
 </head>
 <body onload="unlocknav()">
     <!--Navigatie bar-->
@@ -33,7 +33,7 @@
                 <h1>Home</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
-            <div class="col"><img src="assets/piano roll1.png" alt=""></div>
+            <div class="col"><img src="assets/images/piano roll1.png" alt="Image not found"></div>
         </div>
         <div class="nohelp content s" id="aboutme">
             <div class="col">
@@ -43,8 +43,8 @@
         </div>
         <div class="nohelp content d" id="projects">
             <div class="col-80">
-                <h1>Projects</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+                <h1 id="projectTitle">Projects</h1>
+                <p id="projectParagraph">Mastermind</p>    
             </div>
             <div class="col-20">
                 <div onclick="setproject(this.id)" class="projectselect projectselected" id="p1">
@@ -109,3 +109,4 @@
         <div>Home</div>
     </div>
 </body>
+<script src="js/main.js"></script>
