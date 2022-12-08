@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body onload="unlocknav()">
+<body>
     <!--Navigatie bar-->
     <nav class="nohelp" id="navbar">
         <button class="navbut" onclick="setpage('a')">Home</button>
@@ -21,10 +21,10 @@
     <div class="nohelp" onclick="usenav()" id="usenavbut">
         <div>N</div>
     </div>
-    <!--Intro animatie-->
-    <div>
-        <h2 id="t1">You can navigate using the keyboard!</h2>
-        <h2 id="t2">Or using the navbar on the top.</h2>
+    <!--Intro Scherm-->
+    <div class="introScherm">
+       <p></p>
+       <button onclick="start()">Start</button> 
     </div>
     <!--Main content-->
     <main class="nohelp" id="pagecontent">

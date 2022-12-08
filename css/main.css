@@ -36,7 +36,6 @@ nav {
     position: fixed;
     top: -10vh;
 
-    animation: flyinnavbar 1.5s linear 2.5s 2 alternate none;
     transition-duration: 1s;
 
     display: flex;
@@ -87,26 +86,35 @@ nav {
     border-radius: 40px;
 }
 
-/**Intro Animatie**/
-h2 {
-    color: var(--pink);
-    text-decoration: underline;
-    width: 300px;
+/**Intro Scherm**/
+
+.introScherm {
+    width: 100vw;
+    height: 100vh;
 
     position: fixed;
-    left: calc(50vw - 150px);
-    opacity: 0;
 
-    animation: flyintitle 1s ease 1s 2 alternate none;
+    z-index: 200;
+
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+
+    transition-duration: 1s;
 }
 
-#t1 {
-    bottom: calc(5vh + var(--heightKeyB));
+button {
+    width: 10%;
+    height: 10%;
+
+    background-color: var(--pink);
 }
-#t2 {
-    top: calc(10vh + 20px);
-    animation-delay: 3s;
-}
+
+/**Intro Animatie**/
+
 
 @keyframes flyinkeys {
     from {transform: translateY(500px);
@@ -119,11 +127,6 @@ h2 {
     to {opacity: 1;}
 }
 
-@keyframes flyinnavbar {
-    0% {transform: translateY(0%);}
-    75% {transform: translateY(100%);}
-    100% {transform: translateY(100%);}
-} 
 
 @keyframes opa {
     from {opacity: 0;}
@@ -145,10 +148,6 @@ h2 {
     
     opacity: 0;
 
-    animation-name: opa;
-    animation-duration: 1s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
 }
 
 .content {
