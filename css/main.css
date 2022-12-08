@@ -34,7 +34,6 @@ nav {
     height: 10vh;
 
     position: fixed;
-    top: -10vh;
 
     transition-duration: 1s;
 
@@ -70,6 +69,8 @@ nav {
 
     transition-duration: 1s;
     cursor: pointer;
+
+    top: 10vh;
 }
 
 
@@ -96,21 +97,54 @@ nav {
 
     z-index: 200;
 
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
-
     transition-duration: 1s;
 }
 
-button {
-    width: 10%;
-    height: 10%;
+.introBut {
+    width: 10vw;
+    height: 5vw;
 
     background-color: var(--pink);
+
+    position: fixed;
+    bottom: calc(var(--heightKeyB) + 150px);
+    left: calc(50vw - 5vw);
+
+    animation-name: opa;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+
+    animation-delay: 4s;
+}
+
+.introText {
+    position: fixed;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    width: 600px;
+
+    font-size: 30px;
+
+    animation-name: opa;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+
+}
+
+#textKey {
+    left: calc(50vw - var(--widthKeyB) / 2);
+    bottom: 0px;
+    height: calc(var(--heightKeyB) + 50px);
+    width: var(--widthKeyB);
+
+    animation-delay: 1s;
+}
+
+#textNav {
+    top: 20vh;
+
+    animation-delay: 3s;
 }
 
 /**Intro Animatie**/
@@ -229,6 +263,8 @@ button {
     transition-duration: 1s;
     width: var(--widthKeyB);
     height: var(--heightKeyB);
+
+    z-index: 300;
 }
 
 .whitekeys {

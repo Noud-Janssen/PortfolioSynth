@@ -3,6 +3,8 @@ var navunlock = false;
 function start() {
     document.querySelector('#pagecontent').style.opacity = '1';
     document.querySelector('.introScherm').style.display = 'none';
+    document.querySelector('nav').style.top = '-10vh';
+    document.querySelector('#usenavbut').style.top = '0';
     navunlock = true;
 }
 
