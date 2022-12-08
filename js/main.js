@@ -165,4 +165,8 @@ function setproject(id) {
     document.querySelector('.projectselected').classList.remove('projectselected');
     document.querySelector('#' + id).classList.add('projectselected');
     selectedproject = id;
+
+    if (selectedproject == "p1") {
+        document.querySelector('.projectselected').innerHTML = 'test'
+    }
 }
