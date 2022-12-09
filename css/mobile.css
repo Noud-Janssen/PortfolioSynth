@@ -9,7 +9,7 @@
         --widthKeyB: 280px;
 
         --fontsizeKey: 0px;
-        --fontsizeMed: 25px;
+        --fontsizeMed: 20px;
     }
 
     .content {
@@ -32,6 +32,17 @@
 
         display: flex;
         flex-direction: row;
+    }
+
+    .introBut {
+        width: 80vw;
+        height: 15vh;
+
+        left: 10vw;
+    }
+
+    #textKey {
+        bottom: calc(var(--heightKeyB) + 50px);
     }
 
     .projectselect {
@@ -66,4 +77,3 @@
     }
     
 }
-
