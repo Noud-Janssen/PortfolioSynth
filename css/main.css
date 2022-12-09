@@ -18,7 +18,7 @@
     --widthKeyB: 560px;
 
     --fontsizeKey: 35px;
-    --fontsizeMed: 50px;
+    --fontsizeMed: 35px;
 }
 
 
@@ -45,6 +45,11 @@ nav {
 	justify-content: flex-end;
 	align-items: stretch;
 	align-content: stretch;
+
+    animation-name: flyinnav;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 
 #usenavbut {
@@ -54,7 +59,6 @@ nav {
 
     background-color: var(--pink);
 
-    border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 
     width: 5vh;
@@ -63,7 +67,6 @@ nav {
     justify-content: center;
     align-items: center;
 
-    animation-timing-function: linear;
 
     position: fixed;
     top: 0vh;
@@ -106,9 +109,11 @@ nav {
     width: 10vw;
     height: 5vw;
 
+    border: none;
+
     background: none;
-    border: var(--pink) 10px solid;
     font-size: calc(var(--fontsizeMed) * 1.5);
+    color: var(--green);
 
     position: fixed;
     bottom: calc(var(--heightKeyB) + 150px);
@@ -119,6 +124,10 @@ nav {
     animation-duration: 1s;
 
     animation-delay: 4s;
+}
+
+.introBut:hover {
+    text-decoration: underline;
 }
 
 .introText {
@@ -143,7 +152,7 @@ nav {
 
 #textNav {
     width: 100vw;
-    top: 20vh;
+    top: 15vh;
 
     animation-delay: 2s;
 }
@@ -160,6 +169,11 @@ nav {
 @keyframes flyintitle {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes flyinnav {
+    from {transform: translateY(0);}
+    to {transform: translateY(100%);}
 }
 
 @keyframes opa {

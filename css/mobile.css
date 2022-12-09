@@ -38,6 +38,8 @@
         width: 80vw;
         height: 15vh;
 
+        border: var(--pink) 10px solid;
+
         left: 10vw;
     }
 
