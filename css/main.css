@@ -368,7 +368,7 @@ nav {
     right: 5vw;
     border: var(--green) var(--bordMarKey) solid;
     border-radius: 100px;
-    font-size: var(--fontsizeMed);
+
     color: #ffff;
 
     cursor: pointer;

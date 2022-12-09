@@ -50,8 +50,7 @@ function usehelp() {
             nohelp[i].style.opacity = '0';
         }
 
-        document.querySelector('#helplogo').innerHTML = '<';
-        
+        navopen = false;
         document.querySelector('#helpoverlay').style.top = 'calc(50vh - var(--heightKeyB))';
         document.querySelector('#pagecontent').style.height = '0';
         document.querySelector('.keyboard').style.bottom = 'calc(50vh - var(--heightKeyB) / 2)';
@@ -64,6 +63,7 @@ function usehelp() {
         keyunlock = false;
     }
     else {
+        navopen = true;
         for (i = 0 ; i < keywhite.length ; i++) {
             keywhite[i].style.fontSize = '0px'
         }
@@ -71,7 +71,6 @@ function usehelp() {
             keyblack[i].style.fontSize = '0px'
         }
         document.querySelector('#helpoverlay').style.opacity = '0';
-        document.querySelector('#helplogo').innerHTML = '?';
         setTimeout(() => {
             document.querySelector('#navbar').style.opacity = '1';
             document.querySelector('#usenavbut').style.opacity = '1';
@@ -108,7 +107,7 @@ function keypress(clicked_id) {
         key.style.backgroundColor = 'var(--black)';
     }, 1); 
 
-    if (navunlock == true) {
+    if (navunlock == true && navopen == true) {
         setpage(clicked_id) 
     }
 
