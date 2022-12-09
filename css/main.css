@@ -142,6 +142,9 @@ nav {
 }
 
 #textNav {
+
+    left: calc(50vw - var(--widthKeyB) / 2);
+    width: var(--widthKeyB);
     top: 20vh;
 
     animation-delay: 3s;
@@ -179,7 +182,7 @@ nav {
 
     border-left: var(--green) solid 10px;
     padding-left: 10px;
-    
+        
     opacity: 0;
 
 }
