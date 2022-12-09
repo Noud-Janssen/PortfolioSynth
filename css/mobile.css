@@ -12,6 +12,7 @@
         --fontsizeMed: 20px;
     }
 
+    /** mobile default **/
     .content {
         flex-direction: column;
         justify-content: space-between;
@@ -26,6 +27,11 @@
         justify-content: flex-start;
     }
 
+    .row-80-mobile {
+        width: 100%;
+        height: 80%;
+    }
+
     .row-20-mobile {
         width: 100%;
         height: 20%;
@@ -33,6 +39,8 @@
         display: flex;
         flex-direction: row;
     }
+
+    /** Intro Specifix **/
 
     .introBut {
         width: 80vw;
@@ -46,6 +54,8 @@
     #textKey {
         bottom: calc(var(--heightKeyB) + 50px);
     }
+
+    /** Project specific **/
 
     .projectselect {
         height: 25px;
@@ -61,21 +71,21 @@
         border-bottom: none;
     }
 
-    .row-80-mobile {
-        width: 100%;
-        height: 80%;
-    }
+    /** Help specific **/
 
     #helplogo {
         bottom: var(--heightKeyB);
     }
 
+
+    /** keyboard specific **/
     #t { 
         margin-left: 45px;
     }
 
+    /** nav specific **/
     button {
-        width: 40%;
+        width: 20%;
     }
     
 }
