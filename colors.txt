@@ -1,0 +1,3 @@
+    --black: #011627;
+    --pink: #FF7B9C;
+    --green: #9DD9D2;

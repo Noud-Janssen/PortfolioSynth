@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
+    <canvas onload="draw()" id="background" width="1000" height="1000"></canvas>
+    <!--Navigatie selectie-->
+    <div class="nohelp" onclick="usenav()" id="usenavbut">
+        <div>N</div>
+    </div>
     <!--Navigatie bar-->
     <nav class="nohelp" id="navbar">
         <button class="navbut" onclick="setpage('a')">Home</button>
@@ -18,10 +23,6 @@
         <button class="navbut" onclick="setpage('f')">Music Projects</button>
         <button class="navbut" onclick="setpage('g')">Contact</button>
     </nav>
-    <!--Navigatie selectie-->
-    <div class="nohelp" onclick="usenav()" id="usenavbut">
-        <div>N</div>
-    </div>
     <!--Intro Scherm-->
     <div class="introScherm">
        <p class="introText" id="textKey">Je kan navigeren met het keyboard.</p>
@@ -72,26 +73,26 @@
         </div>
         <div class="nohelp content f" id="music">
             <div class="col-80">
-                <h1>Music</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+                <h1 id="projectTitleMusic">Music</h1>
+                <p id="projectParagraphMusic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
             <div class="col-20">
-                <div onclick="setproject(this.id)" class="projectselect projectselected" id="p1">
-                    Mastermind
+                <div onclick="setmusic(this.id)" class="projectselect projectselectedmusic" id="m1">
+                    Componeren
                 </div>
-                <div onclick="setproject(this.id)" class="projectselect" id="p2">
-                    Project 2
+                <div onclick="setmusic(this.id)" class="projectselect" id="m2">
+                    Les geven
                 </div>
-                <div onclick="setproject(this.id)" class="projectselect" id="p3">
-                    Project 3
+                <div onclick="setmusic(this.id)" class="projectselect" id="m3">
+                    Slagwerek 1ste divisie
                 </div>
-                <div onclick="setproject(this.id)" class="projectselect" id="p4">
+                <div onclick="setmusic(this.id)" class="projectselect" id="m4">
                     Project 4
                 </div>
-                <div onclick="setproject(this.id)" class="projectselect" id="p5">
+                <div onclick="setmusic(this.id)" class="projectselect" id="m5">
                     Project 5
                 </div>
-                <div onclick="setproject(this.id)" class="projectselect" id="p6">
+                <div onclick="setmusic(this.id)" class="projectselect" id="m6">
                     Project 6
                 </div>
                 

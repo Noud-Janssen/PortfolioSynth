@@ -1,10 +1,20 @@
-var navunlock = false;
+function draw() {
+    const canvas = document.getElementById("background");
 
+      const ctx = canvas.getContext("2d");
+  
+      ctx.fillRect(25, 25, 100, 100);
+      ctx.clearRect(45, 45, 60, 60);
+      ctx.strokeRect(50, 50, 50, 50);
+  }
+
+
+var navunlock = false;
 function start() {
     document.querySelector('#pagecontent').style.opacity = '1';
     document.querySelector('.introScherm').style.display = 'none';
     document.querySelector('nav').style.transform = 'translateY(0)';
-    document.querySelector('#usenavbut').style.top = '0';
+    document.querySelector('#usenavbut').style.transform = 'translatey(0)';
     navunlock = true;
 }
 
@@ -54,7 +64,7 @@ function usehelp() {
         document.querySelector('#helpoverlay').style.top = 'calc(50vh - var(--heightKeyB))';
         document.querySelector('#pagecontent').style.height = '0';
         document.querySelector('.keyboard').style.bottom = 'calc(50vh - var(--heightKeyB) / 2)';
-        document.querySelector('#usenavbut').style.left = '-10vw';
+        document.querySelector('#usenavbut').style.transform = 'translatex(5vh)';
 
         setTimeout(() => {
             document.querySelector('#helpoverlay').style.opacity = '1';           
@@ -77,7 +87,7 @@ function usehelp() {
             document.querySelector("." + selectpage).style.opacity = '1';
             document.querySelector('#pagecontent').style.height = 'calc(95vh - var(--heightKeyB))';
             document.querySelector('.keyboard').style.bottom = '0vh';
-            document.querySelector('#usenavbut').style.left = '0vw';
+            document.querySelector('#usenavbut').style.transform = 'translatex(0)';
             document.querySelector('#helpoverlay').style.top = '-100vh';      
             }, 500);
         helpopen = true;
@@ -126,6 +136,7 @@ document.onkeypress = function(evt) {
 };
 
 var selectedproject = "p1";
+var selectedprojectmusic = "pm1"
 function setpage(id) {
     if (id == 'a' || id == 's' || id == 'd' || id == 'f' || id == 'g' || id ==  'h' || id == 'j') {
         var element = document.querySelectorAll('.content');
@@ -141,20 +152,42 @@ function setpage(id) {
 
     }
     if (id == 't') {
-        selectedproject = selectedproject.split('p').pop();
-        if (selectedproject > 1) {
+        if (selectpage == "d") {
+            selectedproject = selectedproject.split('p').pop();
+            if (selectedproject > 1) {
             selectedproject--;
+            selectedproject = "p" + selectedproject;
+            setproject(selectedproject);
+            }
+            
         }
-        selectedproject = "p" + selectedproject;
-        setproject(selectedproject);
+        else if (selectpage == "f") {
+            selectedprojectmusic = selectedprojectmusic.split('m').pop();
+            if (selectedprojectmusic > 1) {
+            selectedprojectmusic--;
+            selectedprojectmusic = "m" + selectedprojectmusic;
+            setmusic(selectedprojectmusic);
+            }
+            
+        }
     }
     else if (id == "u") {
-        selectedproject = selectedproject.split('p').pop();
-        if (selectedproject < 6) {
+        if (selectpage == "d") {
+            selectedproject = selectedproject.split('p').pop();
+            if (selectedproject < 6) {
             selectedproject++;
+            }
+            selectedproject = "p" + selectedproject;
+            setproject(selectedproject);
         }
-        selectedproject = "p" + selectedproject;
-        setproject(selectedproject);
+        else if (selectpage == "f") {
+            selectedprojectmusic = selectedprojectmusic.split('m').pop();
+            if (selectedprojectmusic < 6) {
+            selectedprojectmusic++;
+            }
+            selectedprojectmusic = "m" + selectedprojectmusic;
+            setmusic(selectedprojectmusic);
+        }
     }
 }
 
@@ -175,11 +208,41 @@ const projectPara = [
     "Projct 6"
 ]
 
+const projectTitleMusic = [
+    "Componeren",
+    "Les geven",
+    "Slagwerker 1ste divisie",
+    "Project 4",
+    "Project 5",
+    "Project 6"
+]
+const projectParaMusic = [
+    "Mastermind",
+    "Project 2",
+    "Project 3",
+    "Project 4",
+    "Project 5",
+    "Projct 6"
+]
+
 function setproject(id) {
     document.querySelector('.projectselected').classList.remove('projectselected');
     document.querySelector('#' + id).classList.add('projectselected');
+
     selectedproject = id;
     projectIndex = selectedproject.split('p').pop() - 1;
+
     document.querySelector('#projectParagraph').innerHTML = projectPara[projectIndex];
     document.querySelector('#projectTitle').innerHTML = projectTitle[projectIndex];
+}
+
+function setmusic(id) {
+    document.querySelector('.projectselectedmusic').classList.remove('projectselectedmusic');
+    document.querySelector('#' + id).classList.add('projectselectedmusic');
+
+    selectedprojectmusic = id;
+    projectIndexMusic = selectedprojectmusic.split('m').pop() - 1;
+
+    document.querySelector('#projectParagraphMusic').innerHTML = projectParaMusic[projectIndexMusic];
+    document.querySelector('#projectTitleMusic').innerHTML = projectTitleMusic[projectIndexMusic];
 }
