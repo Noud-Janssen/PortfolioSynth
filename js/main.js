@@ -89,7 +89,7 @@ function usehelp() {
             document.querySelector('#navbar').style.opacity = '1';
             document.querySelector('#usenavbut').style.opacity = '1';
             document.querySelector("." + selectpage).style.opacity = '1';
-            document.querySelector('#pagecontent').style.height = 'calc(95vh - var(--heightKeyB))';
+            document.querySelector('#pagecontent').style.height = 'var(--heightPageContent)';
             document.querySelector('.keyboard').style.bottom = '0vh';
             document.querySelector('#usenavbut').style.transform = 'translatex(0)';
             document.querySelector('#helpoverlay').style.top = '-100vh';      
@@ -151,7 +151,7 @@ function setpage(id) {
 
         var selectid = document.querySelector('.' + id)
         selectid.style.opacity = '1';
-        selectid.style.transform = 'translatex(-90vw)';
+        selectid.style.transform = 'translateX(var(--leftContent))';
         selectpage = id;
 
     }

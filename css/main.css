@@ -20,6 +20,8 @@
     --heightPageContentNav: 80vh;
     --topPageContentNav: 15vh;
 
+    --leftContent: -90vw;
+
     --heightKeyB: 280px;
     --widthKeyB: 560px;
 
@@ -107,7 +109,7 @@ nav {
 }
 
 #usenavbut:hover {
-    box-shadow: var(--green) 20px 20px;
+    box-shadow: var(--green) 1vh 1vh;
 }
 
 
@@ -321,7 +323,7 @@ nav {
 }
 
 #home {
-    transform: translateX(-90vw);
+    transform: translateX(var(--leftContent));
 }
 
 .nonactive {
@@ -451,4 +453,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+}
+
+/** svgs **/
+
+.fillGreen{
+    fill: var(--green);
 }
