@@ -13,7 +13,9 @@
     <canvas onload="draw()" id="background" width="1000" height="1000"></canvas>
     <!--Navigatie selectie-->
     <div class="nohelp" onclick="usenav()" id="usenavbut">
-        <div>N</div>
+        <div class="margin-a">
+            <svg id="usenavbutsvg" fill="#ccc5b9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="5vh" height="5vh"><g data-name="93-Arrow Down"><path d="M16 0a16 16 0 1 0 16 16A16 16 0 0 0 16 0zm0 30a14 14 0 1 1 14-14 14 14 0 0 1-14 14z"/><path d="m16 19.59-7.29-7.3-1.42 1.42 8 8a1 1 0 0 0 1.41 0l8-8-1.41-1.41z"/></g></svg>
+        </div>
     </div>
     <!--Navigatie bar-->
     <nav class="nohelp" id="navbar">
@@ -27,7 +29,9 @@
     <div class="introScherm">
        <p class="introText" id="textKey">Je kan navigeren met het keyboard.</p>
        <p class="introText" id="textNav">Of gebruik maken van de navigatie balk!</p>
+       <p class="introText" id="textNavBut"><svg fill="#eb5e28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="2vw" height="2vw"><path d="M3.41 2H16V0H1a1 1 0 0 0-1 1v16h2V3.41l28.29 28.3 1.41-1.41z" data-name="7-Arrow Up"/></svg>klik hier om te switchen.</p>
        <button class="introBut" onclick="start()">Enter</button> 
+       <button class="introBut" onclick="start()" id="skip">Skip</button> 
     </div>
     <!--Main content-->
     <main id="pagecontent">
@@ -84,7 +88,7 @@
                     Les geven
                 </div>
                 <div onclick="setmusic(this.id)" class="projectselect" id="m3">
-                    Slagwerek 1ste divisie
+                    Slagwerker 1ste divisie
                 </div>
                 <div onclick="setmusic(this.id)" class="projectselect" id="m4">
                     Project 4

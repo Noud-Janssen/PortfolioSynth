@@ -14,7 +14,9 @@ function start() {
     document.querySelector('#pagecontent').style.opacity = '1';
     document.querySelector('.introScherm').style.display = 'none';
     document.querySelector('nav').style.transform = 'translateY(0)';
-    document.querySelector('#usenavbut').style.transform = 'translatey(0)';
+    document.querySelector('#usenavbut').style.transform = 'translateY(0%)';
+    document.querySelector('#usenavbut').style.animation = 'none';
+    document.querySelector('nav').style.animation = 'none';
     navunlock = true;
 }
 
@@ -25,9 +27,10 @@ function usenav() {
             document.querySelector('#navbar').style.transform = 'translatey(10vh)'
             document.querySelector('.keyboard').style.transform = 'translatey(150%)'
             document.querySelector('#helplogo').style.transform = 'translatex(20vw)'
-            document.querySelector('#pagecontent').style.top = '15vh'
-            document.querySelector('#pagecontent').style.height = '80vh'
+            document.querySelector('#pagecontent').style.top = 'var(--topPageContentNav)'
+            document.querySelector('#pagecontent').style.height = 'var(--heightPageContentNav)'
             document.querySelector('#usenavbut').style.transform = 'translatey(10vh)'
+            document.querySelector('#usenavbutsvg').style.transform = 'rotate(180deg)'
             navopen = false;
             keyunlock = false;
         }
@@ -35,9 +38,10 @@ function usenav() {
             document.querySelector('#navbar').style.transform = 'translatey(0)'
             document.querySelector('.keyboard').style.transform = 'translatey(0)'
             document.querySelector('#helplogo').style.transform = 'translatex(0)'
-            document.querySelector('#pagecontent').style.top = '5vh'
-            document.querySelector('#pagecontent').style.height = 'calc(95vh - var(--heightKeyB))'
+            document.querySelector('#pagecontent').style.top = 'var(--topPageContent)'
+            document.querySelector('#pagecontent').style.height = 'var(--heightPageContent)'
             document.querySelector('#usenavbut').style.transform = 'translatey(0)'
+            document.querySelector('#usenavbutsvg').style.transform = 'rotate(0deg)'
             
             navopen = true;
             keyunlock = true;
@@ -64,7 +68,7 @@ function usehelp() {
         document.querySelector('#helpoverlay').style.top = 'calc(50vh - var(--heightKeyB))';
         document.querySelector('#pagecontent').style.height = '0';
         document.querySelector('.keyboard').style.bottom = 'calc(50vh - var(--heightKeyB) / 2)';
-        document.querySelector('#usenavbut').style.transform = 'translatex(5vh)';
+        document.querySelector('#usenavbut').style.transform = 'translatex(-5vh)';
 
         setTimeout(() => {
             document.querySelector('#helpoverlay').style.opacity = '1';           

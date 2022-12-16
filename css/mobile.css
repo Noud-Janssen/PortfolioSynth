@@ -7,6 +7,13 @@
 
         --heightKeyB: 140px;
         --widthKeyB: 280px;
+        
+
+        --heightPageContent: calc(80vh - 140px);
+        --topPageContent: 15vh;
+
+        --heightPageContentNav: 70vh;
+        --topPageContentNav: 25vh;
 
         --fontsizeKey: 0px;
         --fontsizeMed: 20px;
@@ -40,7 +47,7 @@
         flex-direction: row;
     }
 
-    /** Intro Specifix **/
+    /** Intro Specific **/
 
     .introBut {
         width: 80vw;
@@ -53,6 +60,11 @@
 
     #textKey {
         bottom: calc(var(--heightKeyB) + 50px);
+    }
+
+    #skip {
+        width: fit-content;
+        border: none;
     }
 
     /** Project specific **/
