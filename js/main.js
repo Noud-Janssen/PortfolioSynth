@@ -137,7 +137,7 @@ document.onkeypress = function(evt) {
     if (keyunlock == true) {
         keypress(charStr);  
     }
-};
+}
 
 var selectedproject = "p1";
 var selectedprojectmusic = "pm1"
