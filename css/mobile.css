@@ -55,9 +55,9 @@
         width: 80vw;
         height: 15vh;
 
-        border: var(--pink) 10px solid;
-
         left: 10vw;
+
+        text-decoration: underline;
     }
 
     #textKey {
@@ -67,18 +67,21 @@
     #skip {
         border: none;
 
-        bottom:  calc(var(--heightKeyB) + 15px);
+        bottom:  calc(var(--heightKeyB) + 10px);
 
         min-width: 30px;
         min-height: 30px;
         width: 5vw;
         height: 5vw;
+
+        font-size: 20px;
         
     }
 
     /**Main content**/
     #pagecontent {
         left: 2.5vw;
+        width: calc(90vw - 2.5vw);
     }
 
     /** Project specific **/
@@ -91,6 +94,13 @@
     }
 
     .projectselected {
+        height: 25px;
+        width: 100%;
+        border-right: 5px solid var(--green);
+        border-bottom: none;
+    }
+
+    .projectselectedmusic {
         height: 25px;
         width: 100%;
         border-right: 5px solid var(--green);
