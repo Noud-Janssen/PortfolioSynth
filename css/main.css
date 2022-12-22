@@ -175,7 +175,7 @@ nav {
 
 .introText {
     position: fixed;
-    color: var(--green);
+    color: var(--pink);
     text-align: center;
 
     font-size: var(--fontsizeMed);
@@ -457,6 +457,22 @@ nav {
 
 /** svgs **/
 
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
 .fillGreen{
+    color: var(--green);
     fill: var(--green);
+}
+
+.fillPink {
+    color: var(--pink);
+    fill: var(--pink);
 }

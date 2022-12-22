@@ -65,8 +65,15 @@
     }
 
     #skip {
-        width: fit-content;
         border: none;
+
+        bottom:  calc(var(--heightKeyB) + 15px);
+
+        min-width: 30px;
+        min-height: 30px;
+        width: 5vw;
+        height: 5vw;
+        
     }
 
     /**Main content**/

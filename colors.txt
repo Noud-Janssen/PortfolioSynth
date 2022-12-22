@@ -1,3 +1,6 @@
     --black: #011627;
     --pink: #FF7B9C;
     --green: #9DD9D2;
+
+    --accent2: #2541B2;
+    --accent3: #A167A5;
