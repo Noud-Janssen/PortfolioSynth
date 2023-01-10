@@ -122,6 +122,7 @@
     /** nav specific **/
     button {
         width: 20%;
+        height: 100%;
     }
     
 }

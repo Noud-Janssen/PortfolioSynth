@@ -320,6 +320,8 @@ nav {
     height: 20%;
     border-bottom: 15px solid var(--green);
     text-decoration: dashed;
+    animation-name: selectProject;
+    animation-duration: 1s;
 }
 
 .projectselectedmusic {
@@ -481,4 +483,16 @@ nav {
 .fillPink {
     color: var(--pink);
     fill: var(--pink);
+}
+
+@keyframes selectProject {
+    0% {
+        font-size: var(--fontsizeMed);
+    }
+    50% {
+        font-size: 100px;
+    }
+    100% {
+        font-size: var(--fontsizeMed);
+    }
 }
