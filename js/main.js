@@ -1,22 +1,10 @@
-function draw() {
-    const canvas = document.getElementById("background");
-
-      const ctx = canvas.getContext("2d");
-  
-      ctx.fillRect(25, 25, 100, 100);
-      ctx.clearRect(45, 45, 60, 60);
-      ctx.strokeRect(50, 50, 50, 50);
-  }
-
-
 var navunlock = false;
 function start() {
-    document.querySelector('#pagecontent').style.opacity = '1';
-    document.querySelector('.introScherm').style.display = 'none';
-    document.querySelector('nav').style.transform = 'translateY(0)';
-    document.querySelector('#usenavbut').style.transform = 'translateY(0%)';
-    document.querySelector('#usenavbut').style.animation = 'none';
-    document.querySelector('nav').style.animation = 'none';
+    document.querySelector('#pagecontent').style.display = 'inline';
+    document.querySelector('#landingpage').style.display = 'none';
+    document.querySelector('.whitekeys').classList.add('flyin')
+    document.querySelector('.blackkeys').classList.add('flyin')
+    document.querySelector('.keyboard').style.display = 'inline'
     navunlock = true;
 }
 

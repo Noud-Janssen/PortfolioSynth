@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas onload="draw()" id="background" width="1000" height="1000"></canvas>
     <!--Navigatie selectie-->
     <div class="nohelp" onclick="usenav()" id="usenavbut">
         <div class="margin-a">
@@ -29,32 +30,29 @@
         <button class="navbut" onclick="setpage('f')">Music Projects</button>
         <button class="navbut" onclick="setpage('g')">Contact</button>
     </nav>
-    <!--Intro Scherm-->
-    <div class="introScherm">
-       <p class="introText" id="textKey">Je kan navigeren met het keyboard.</p>
-       <p class="introText" id="textNav">Of gebruik maken van de navigatie balk!</p>
-       <p class="introText" id="textNavBut"><svg fill="#eb5e28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="2vw" height="2vw"><path d="M3.41 2H16V0H1a1 1 0 0 0-1 1v16h2V3.41l28.29 28.3 1.41-1.41z" data-name="7-Arrow Up"/></svg>klik hier om te switchen.</p>
-       <button class="introBut" onclick="start()">Enter</button> 
-       <button class="introBut" onclick="start()" id="skip">Skip</button> 
+    <!--landing page-->
+    <div id="landingpage">
+        <h1 onclick="start()">Noud Janssen</h1>
+        <h1 onclick="start()">Enter</h1>
     </div>
     <!--Main content-->
     <main id="pagecontent">
         <div class="nohelp content a" id="home">
             <div class="col">
-                <h1>Home</h1>
+                <h2>Home</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
             <div class="col"><img src="assets/images/piano roll1.png" alt="Image not found"></div>
         </div>
         <div class="nohelp content s" id="aboutme">
             <div class="col">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
         </div>
         <div class="nohelp content d" id="projects">
             <div class="col-80">
-                <h1 id="projectTitle">Projects</h1>
+                <h2 id="projectTitle">Projects</h2>
                 <p id="projectParagraph">Mastermind</p>    
             </div>
             <div class="col-20">
@@ -81,7 +79,7 @@
         </div>
         <div class="nohelp content f" id="music">
             <div class="col-80">
-                <h1 id="projectTitleMusic">Music</h1>
+                <h2 id="projectTitleMusic">Music</h2>
                 <p id="projectParagraphMusic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
             <div class="col-20">
@@ -108,13 +106,13 @@
         </div>
         <div class="nohelp content g" id="contact">
             <div class="col">
-                <h1>Contact</h1>
+                <h2>Contact</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
         </div>
         <div class="nohelp content h" id="synth">
             <div class="col">
-                <h1>Synthesizer</h1>
+                <h2>Synthesizer</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
             </div>
         </div>
