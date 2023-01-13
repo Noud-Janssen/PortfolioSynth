@@ -1,11 +1,20 @@
 var navunlock = false;
 function start() {
-    document.querySelector('#pagecontent').style.display = 'inline';
-    document.querySelector('#landingpage').style.display = 'none';
-    document.querySelector('.whitekeys').classList.add('flyin')
-    document.querySelector('.blackkeys').classList.add('flyin')
-    document.querySelector('.keyboard').style.display = 'inline'
-    navunlock = true;
+        document.querySelector('#landingpage').style.opacity = '0';
+        document.querySelector('#pagecontent').style.display = 'inline';
+        document.querySelector('#helplogo').style.display = 'inline';
+        document.querySelector('#usenavbut').style.display = 'flex';
+    setTimeout(() => {
+        document.querySelector('#usenavbut').style.transform = 'translateY(0)';
+        document.querySelector('#helplogo').style.transform = "translateX(0)";
+        document.querySelector('#pagecontent').style.opacity = '1';
+        document.querySelector('#landingpage').style.display = 'none';
+        document.querySelector('.whitekeys').classList.add('flyin');
+        document.querySelector('.blackkeys').classList.add('flyin');
+        document.querySelector('.keyboard').style.display = 'inline';
+        navunlock = true; 
+    }, 500);
+    
 }
 
 var navopen = true;

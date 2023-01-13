@@ -50,6 +50,17 @@
     }
 
     /** Intro Specific **/
+    h1 {
+        width: 80vw;
+        font-size: 10vw;
+    }
+
+    #enterButton {
+        font-size: 6vw;
+        width: 20vw;
+        height: 20vw;
+    }
+
 
     .introBut {
         width: 80vw;
@@ -115,6 +126,11 @@
 
 
     /** keyboard specific **/
+
+    .keyboard {
+        left: calc(50vw - (var(--widthKeyB) / 2));
+    }
+
     #t { 
         margin-left: 45px;
     }

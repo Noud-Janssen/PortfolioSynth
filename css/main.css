@@ -10,8 +10,9 @@
     --black: #ccc5b9;
     --pink: #252422;
     --green: #eb5e28;
-    --widthKey: 40px;
-    --heightKey: 100px;
+    --rust: #E04E15;
+    --widthKey: calc(3vw);
+    --heightKey: calc(3vw * 2.5);
     --bordMarKey: 10px;
 
     --heightPageContent: calc(95vh - 280px);
@@ -22,12 +23,18 @@
 
     --leftContent: -90vw;
 
-    --heightKeyB: 280px;
-    --widthKeyB: 560px;
+    --heightKeyB: calc(var(--heightKey + var(--bordMarKey) * 4) * 2);
+    --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
 
     --fontsizeKey: 35px;
     --fontsizeMed: 35px;
     --fontsizeSmall: 25px;
+}
+
+/** test **/
+.html {
+    color: var(--rust);
+    font-size: 4vw;
 }
 
 
@@ -43,12 +50,43 @@ canvas {
 
 h1 {
     color: var(--black);
-    cursor: pointer;
+    border-radius: 10px;
     font-size: 5vw;
+    width: 100vw;
 }
 
-h1:hover {
+.name {
+    padding-left: 10vw;
+}
+
+.title {
+    font-size: 4vw;
+    text-align: right;
+    padding-right: 10vw;
+}
+
+#enterButton:hover {
     text-decoration: underline;
+    box-shadow:  2.5px 2.5px 10px #5a5a5a,
+    -2.5px -2.5px 10px #ffffff;
+}
+
+#enterButton {
+
+
+    font-size: 3vw;
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--green);
+    border-radius: 100px;
+
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 /**Navigatie**/
@@ -85,7 +123,9 @@ nav {
     justify-content: center;
     align-items: center;
 
-    display: flex;
+    transform: translateY(-100%);
+
+    display: none;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
@@ -98,9 +138,6 @@ nav {
     left: -10vh;
 
     cursor: pointer;
-
-
-
 }
 
 .margin-a {
@@ -110,6 +147,7 @@ nav {
 
 #usenavbut:hover {
     box-shadow: var(--green) 1vh 1vh;
+    
 }
 
 
@@ -188,6 +226,25 @@ nav {
 	align-content: stretch;
 }
 
+#bladmuziek {
+    background-image: url(../assets/images/bladmuziekLandingpage.svg);
+    width: 100vw;
+    height: 100vh;
+    
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
 #textKey {
     bottom: var(--heightKeyB);
     width: 100vw;
@@ -248,7 +305,9 @@ nav {
     height: var(--heightPageContent);
 
     display: none;
-    
+    opacity: '0';
+
+    transition-duration: 0.5s;
 
     position: fixed;
     top: var(--topPageContent);
@@ -348,7 +407,7 @@ nav {
 .keyboard {
     position: fixed;
     left: calc(50vw - (var(--widthKeyB) / 2));
-    bottom: 0vh;
+    bottom: 1vh;
     width: var(--widthKeyB);
     height: var(--heightKeyB);
 
@@ -368,7 +427,7 @@ nav {
     transform: translateY(500px);
 
 
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 .blackkeys {
@@ -382,7 +441,7 @@ nav {
 
     transform: translateY(500px);
 
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 .keywhite {
@@ -441,6 +500,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: none;
+    transform: translateX(200%);
 
     position: fixed;
     bottom: 5vh;
