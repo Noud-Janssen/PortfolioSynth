@@ -1,15 +1,15 @@
 @media only screen and (max-width: 600px) {
 
     :root {
-        --widthKey: 20px;
-        --heightKey: 50px;
-        --bordMarKey: 5px; 
+        --widthKey: 8vw;
+        --heightKey: calc(var(--widthKey) * 2.5);
+        --bordMarKey: 1.5vw; 
 
-        --heightKeyB: 140px;
-        --widthKeyB: 280px;
+        --heightKeyB: calc(var(--heightKey + var(--bordMarKey) * 4) * 2);
+        --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
         
 
-        --heightPageContent: calc(80vh - 140px);
+        --heightPageContent: calc(70vh - 8vw * 4);
         --topPageContent: 15vh;
 
         --heightPageContentNav: 70vh;
@@ -18,7 +18,7 @@
         --leftContent: -97.5vw;
 
         --fontsizeKey: 0px;
-        --fontsizeMed: 20px;
+        --fontsizeMed: 3vw;
     }
 
     /** mobile default **/
