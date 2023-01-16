@@ -13,9 +13,9 @@
     --rust: #E04E15;
     --widthKey: calc(3vw);
     --heightKey: calc(3vw * 2.5);
-    --bordMarKey: 0.75vw;
+    --bordMarKey: calc(0.75vw);
 
-    --heightPageContent: calc(95vh - 280px);
+    --heightPageContent: calc(95vh - var(--heightKeyB));
     --topPageContent: 5vh;
 
     --heightPageContentNav: 80vh;
@@ -27,16 +27,11 @@
     --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
 
     --fontsizeKey: 35px;
-    --fontsizeMed: 1vw;
+    --fontsizeMed: calc(1vw);
     --fontsizeBig: 5vw;
     --fontsizeSmall: 25px;
 }
 
-/** test **/
-.html {
-    color: var(--rust);
-    font-size: 4vw;
-}
 
 
 body {
@@ -385,9 +380,8 @@ nav {
     margin-left: 50%;
 
     transition-duration: 0.25s;
-    font-size: 200%;
 
-    font-size: var(--fontsizeSmall);
+    font-size: var(--fontsizeMed);
     
     cursor: pointer;
 }
@@ -496,7 +490,7 @@ nav {
 }
 
 #t {
-    margin-left: 90px;
+    margin-left: calc(6vw + var(--bordMarKey));
 }
 
 
