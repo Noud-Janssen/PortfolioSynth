@@ -2,11 +2,9 @@ var navunlock = false;
 function start() {
         document.querySelector('#landingpage').style.opacity = '0';
         document.querySelector('#pagecontent').style.display = 'inline';
-        document.querySelector('#helplogo').style.display = 'inline';
         document.querySelector('#usenavbut').style.display = 'flex';
     setTimeout(() => {
         document.querySelector('#usenavbut').style.transform = 'translateY(0)';
-        document.querySelector('#helplogo').style.transform = "translateX(0)";
         document.querySelector('#pagecontent').style.opacity = '1';
         document.querySelector('#landingpage').style.display = 'none';
         document.querySelector('.whitekeys').classList.add('flyin');
@@ -23,7 +21,6 @@ function usenav() {
         if (navopen == true) {
             document.querySelector('#navbar').style.transform = 'translatey(10vh)'
             document.querySelector('.keyboard').style.transform = 'translatey(150%)'
-            document.querySelector('#helplogo').style.transform = 'translatex(20vw)'
             document.querySelector('#pagecontent').style.top = 'var(--topPageContentNav)'
             document.querySelector('#pagecontent').style.height = 'var(--heightPageContentNav)'
             document.querySelector('#usenavbut').style.transform = 'translatey(10vh)'
@@ -34,7 +31,6 @@ function usenav() {
         else {
             document.querySelector('#navbar').style.transform = 'translatey(0)'
             document.querySelector('.keyboard').style.transform = 'translatey(0)'
-            document.querySelector('#helplogo').style.transform = 'translatex(0)'
             document.querySelector('#pagecontent').style.top = 'var(--topPageContent)'
             document.querySelector('#pagecontent').style.height = 'var(--heightPageContent)'
             document.querySelector('#usenavbut').style.transform = 'translatey(0)'
@@ -47,55 +43,7 @@ function usenav() {
     
 
 
-}
 
-
-var selectpage ="a";
-var helpopen = true;
-function usehelp() {
-    var nohelp = document.querySelectorAll('.nohelp')
-    var keywhite = document.querySelectorAll('.keywhite')
-    var keyblack = document.querySelectorAll('.keyblack')
-    if (helpopen == true) {
-        for (i = 0 ; i < nohelp.length ; i++) {
-            nohelp[i].style.opacity = '0';
-        }
-
-        navopen = false;
-        document.querySelector('#helpoverlay').style.top = 'calc(50vh - var(--heightKeyB))';
-        document.querySelector('#pagecontent').style.height = '0';
-        document.querySelector('.keyboard').style.bottom = 'calc(50vh - var(--heightKeyB) / 2)';
-        document.querySelector('#usenavbut').style.transform = 'translatex(-5vh)';
-
-        setTimeout(() => {
-            document.querySelector('#helpoverlay').style.opacity = '1';           
-        }, 1000);
-        helpopen = false;
-        keyunlock = false;
-    }
-    else {
-        navopen = true;
-        for (i = 0 ; i < keywhite.length ; i++) {
-            keywhite[i].style.fontSize = '0px'
-        }
-        for (i = 0 ; i < keyblack.length ; i++) {
-            keyblack[i].style.fontSize = '0px'
-        }
-        document.querySelector('#helpoverlay').style.opacity = '0';
-        setTimeout(() => {
-            document.querySelector('#navbar').style.opacity = '1';
-            document.querySelector('#usenavbut').style.opacity = '1';
-            document.querySelector("." + selectpage).style.opacity = '1';
-            document.querySelector('#pagecontent').style.height = 'var(--heightPageContent)';
-            document.querySelector('.keyboard').style.bottom = '0vh';
-            document.querySelector('#usenavbut').style.transform = 'translatex(0)';
-            document.querySelector('#helpoverlay').style.top = '-100vh';      
-            }, 500);
-        helpopen = true;
-        keyunlock = true;
-    }
-
-}
 
 function keypress(clicked_id) {
 

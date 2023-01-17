@@ -1,9 +1,9 @@
 @media only screen and (max-width: 600px) {
 
     :root {
-        --widthKey: 8vw;
+        --widthKey: 4vh;
         --heightKey: calc(var(--widthKey) * 2.5);
-        --bordMarKey: 1.5vw; 
+        --bordMarKey: 0.75vh; 
 
         --heightKeyB: calc(var(--heightKey + var(--bordMarKey) * 4) * 2);
         --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
@@ -18,7 +18,7 @@
         --leftContent: -97.5vw;
 
         --fontsizeKey: 0px;
-        --fontsizeMed: 3vw;
+        --fontsizeMed: 2vh;
     }
 
     /** mobile default **/
@@ -118,17 +118,11 @@
         border-bottom: none;
     }
 
-    /** Help specific **/
-
-    #helplogo {
-        bottom: var(--heightKeyB);
-    }
-
-
     /** keyboard specific **/
 
     .keyboard {
         left: calc(50vw - (var(--widthKeyB) / 2));
+        bottom: 3vh;
     }
 
     #t { 

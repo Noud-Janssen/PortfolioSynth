@@ -11,9 +11,9 @@
     --pink: #252422;
     --green: #eb5e28;
     --rust: #E04E15;
-    --widthKey: calc(3vw);
-    --heightKey: calc(3vw * 2.5);
-    --bordMarKey: calc(0.75vw);
+    --widthKey: calc(6vh);
+    --heightKey: calc(6vh * 2.5);
+    --bordMarKey: calc(1.5vh);
 
     --heightPageContent: calc(95vh - var(--heightKeyB));
     --topPageContent: 5vh;
@@ -23,12 +23,12 @@
 
     --leftContent: -90vw;
 
-    --heightKeyB: calc(var(--heightKey + var(--bordMarKey) * 4) * 2);
+    --heightKeyB: calc(var(--heightKey) + var(--bordMarKey) * 16);
     --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
 
     --fontsizeKey: 35px;
-    --fontsizeMed: calc(1vw);
-    --fontsizeBig: 5vw;
+    --fontsizeMed: calc(3vh);
+    --fontsizeBig: 5vh;
     --fontsizeSmall: 25px;
 }
 
@@ -490,54 +490,9 @@ nav {
 }
 
 #t {
-    margin-left: calc(6vw + var(--bordMarKey));
+    margin-left: calc(var(--widthKey) * 2 + var(--bordMarKey));
 }
 
-
-/**Help button**/
-#helplogo {
-    min-width: 30px;
-    min-height: 30px;
-    width: 5vw;
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    display: none;
-    transform: translateX(200%);
-
-    position: fixed;
-    bottom: 5vh;
-    right: 5vw;
-    border: var(--green) var(--bordMarKey) solid;
-    border-radius: 100px;
-
-    color: #ffff;
-
-    cursor: pointer;
-    user-select: none;
-
-    z-index: 101;
-}
-
-#helpoverlay {
-    width: 80vw;
-    height: calc(var(--heightKeyB) * 2);
-
-    position: fixed;
-    top: -100vh ;
-    left: 10vw;
-    z-index: 100;
-
-    opacity: 0;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
 
 /** svgs **/
 
