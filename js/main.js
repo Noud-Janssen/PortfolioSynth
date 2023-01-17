@@ -1,4 +1,5 @@
 var navunlock = false;
+var selectpage ="a";
 function start() {
         document.querySelector('#landingpage').style.opacity = '0';
         document.querySelector('#pagecontent').style.display = 'inline';
@@ -20,7 +21,7 @@ function usenav() {
     if (navunlock == true) {
         if (navopen == true) {
             document.querySelector('#navbar').style.transform = 'translatey(10vh)'
-            document.querySelector('.keyboard').style.transform = 'translatey(150%)'
+            document.querySelector('.keyboard').style.transform = 'translatey(250%)'
             document.querySelector('#pagecontent').style.top = 'var(--topPageContentNav)'
             document.querySelector('#pagecontent').style.height = 'var(--heightPageContentNav)'
             document.querySelector('#usenavbut').style.transform = 'translatey(10vh)'
@@ -43,7 +44,20 @@ function usenav() {
     
 
 
+}
 
+function clickNavBut(page, id) {
+    setButtonCss(id);
+    setpage(page)
+}
+
+function setButtonCss(id) {
+    elements = document.getElementsByClassName("navbut")
+    for (i = 0 ; i < elements.length ; i++) {
+        elements[i].style.borderBottom = "none";
+    }
+    document.querySelector('#' + id).style.borderBottom = "var(--green) 1vh solid";
+}
 
 function keypress(clicked_id) {
 

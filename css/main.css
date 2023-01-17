@@ -55,6 +55,10 @@ h2 {
     font-size: var(--fontsizeBig);
 }
 
+.visMobile {
+    display: none;
+}
+
 .name {
     padding-left: 10vw;
 }
@@ -62,7 +66,8 @@ h2 {
 .title {
     font-size: 4vw;
     text-align: right;
-    padding-right: 10vw;
+    padding-right: 0vw;
+    width: 50vw;
 }
 
 #enterButton:hover {
@@ -159,6 +164,7 @@ nav {
     box-sizing:content-box;
     transition-duration: 0s;
 
+
     border: none;
     background: none;
     width: 10vh;
@@ -167,9 +173,9 @@ nav {
     color: var(--black);
 }
 
-.navbut:hover {
+/**.navbut:hover {
     border-bottom: var(--green) 4px solid;
-}
+}**/
 
 /**Intro Scherm**/
 
@@ -228,6 +234,40 @@ nav {
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
+}
+
+#bottomRowLandingPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100vw;
+}
+
+#langBut {
+    width: 10vw;
+    height: 10vh;
+    background-color: var(--green);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lang {
+    font-size: 3vh;
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.langSelected {
+    background-color: var(--black);
+    border-radius: 20px;
 }
 
 #bladmuziek {
@@ -374,6 +414,9 @@ nav {
 }
 
 .projectselect {
+
+    box-sizing: border-box;
+
     width: 50%;
     height: 15%;
     margin: 10px;

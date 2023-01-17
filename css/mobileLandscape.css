@@ -1,0 +1,37 @@
+@media only screen and (orientation: landscape) {
+    :root {
+        --heightPageContent: 90vh;
+    }
+
+    .keyboard {
+        left: auto;
+        bottom: 1vh;
+        right: 0vw;
+        max-width: 100vh;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .col-20 {
+        height: 50vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projectselect {
+        width: 20%;
+        height: 50%;
+        margin: 10px;
+        margin-left: 10px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+    
+}

@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobileLandscape.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,21 +25,30 @@
     </div>
     <!--Navigatie bar-->
     <nav class="nohelp" id="navbar">
-        <button class="navbut" onclick="setpage('a')">Home</button>
-        <button class="navbut" onclick="setpage('s')">About Me</button>
-        <button class="navbut" onclick="setpage('d')">It Projects</button>
-        <button class="navbut" onclick="setpage('f')">Music Projects</button>
-        <button class="navbut" onclick="setpage('g')">Contact</button>
+        <button id="navbut1" class="navbut" onclick="setpage('a');setButtonCss(this.id)">Home</button>
+        <button id="navbut2" class="navbut" onclick="setpage('s');setButtonCss(this.id)">Wie ben ik?</button>
+        <button id="navbut3" class="navbut" onclick="setpage('d');setButtonCss(this.id)">IT</button>
+        <button id="navbut4" class="navbut" onclick="setpage('f');setButtonCss(this.id)">Muziek</button>
+        <button id="navbut5" class="navbut" onclick="setpage('g');setButtonCss(this.id)">Contact</button>
     </nav>
     <!--landing page-->
     <div id="landingpage">
         <div id="bladmuziek">
             <h1 class="name">Noud Janssen</h1>
             <h1  id="enterButton" onclick="start()">Enter</h1>
-            <div id="title">
-                <h1 class="title">Musician</h1>
-                <h1 class="title">Software Developer</h1>
+            <div id="bottomRowLandingPage">
+                <a href="engels.html">
+                    <div id="langBut">
+                        <div class="lang langSelected">NL</div>
+                        <div class="lang">EN</div>
+                    </div>
+                </a>
+                <div id="title">
+                    <h1 class="title">Musician</h1>
+                    <h1 class="title">Software Developer</h1>
+                </div>
             </div>
+            
         </div>
         
  
@@ -46,16 +56,20 @@
     <!--Main content-->
     <main id="pagecontent">
         <div class="nohelp content a" id="home">
-            <div class="col">
-                <h2>how to</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+            <div class="col visDesktop">
+                <h2>Hoi!</h2>
+                <p>Op deze site kan je navigeren met het keyboard hier beneden. <br> <br> Door links boven te klikken, kan je naar een klassiekere manier van navigeren gaan.</p>    
+            </div>
+            <div class="col visMobile">
+                <h2>Hoi!</h2>
+                <p>Op deze site kan je navigeren met het keyboard hier beneden. <br> <br> Door links boven te klikken, kan je naar een klassiekere manier van navigeren gaan. <br> <br> Het werkt het beste met een gedraaide telefoon!</p>    
             </div>
             <div class="col"><img src="assets/images/piano roll1.png" alt="Image not found"></div>
         </div>
         <div class="nohelp content s" id="aboutme">
             <div class="col">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure dignissimos eveniet eligendi at sed soluta distinctio modi illo. Delectus incidunt placeat aliquam ut ipsum et molestiae harum soluta repellendus!</p>    
+                <h2>Wie ben ik?</h2>
+                <p>Ik ben Noud. <br> Een 1ste jaars software developer op ROC nijmegen.</p>    
             </div>
         </div>
         <div class="nohelp content d" id="projects">
@@ -127,47 +141,51 @@
     </main>
     <!--Navigatie keyboard-->
     <div class="keyboard">
-        <div class="blackkeys">
-            <div onclick="keypress(this.id)" class="keyblack" id='w'></div>
-            <div onclick="keypress(this.id)" class="keyblack" id='e'></div>
-            <div onclick="keypress(this.id)" class="keyblack" id='t'></div>
-            <div onclick="keypress(this.id)" class="keyblack" id='y'></div>
-            <div onclick="keypress(this.id)" class="keyblack" id='u'></div>
+        <div class="rotate-">
+            <div class="blackkeys">
+                <div onclick="keypress(this.id)" class="keyblack" id='w'></div>
+                <div onclick="keypress(this.id)" class="keyblack" id='e'></div>
+                <div onclick="keypress(this.id)" class="keyblack" id='t'></div>
+                <div onclick="keypress(this.id)" class="keyblack" id='y'></div>
+                <div onclick="keypress(this.id)" class="keyblack" id='u'></div>
+            </div>
+            <div class="whitekeys">
+                <div onclick="keypress(this.id)" class="keywhite" id='a'>
+                    <span class="material-symbols-outlined fillPink rotate">
+                        home
+                    </span>
+                </div>  
+                <div onclick="keypress(this.id)" class="keywhite" id='s'>
+                    <span class="material-symbols-outlined fillPink rotate">
+                        person
+                    </span>
+                </div>
+                <div onclick="keypress(this.id)" class="keywhite" id='d'>
+                    <span class="material-symbols-outlined fillPink rotate">
+                        library_books
+                    </span>
+                </div>
+                <div onclick="keypress(this.id)" class="keywhite" id='f'>
+                    <span class="material-symbols-outlined fillPink rotate">
+                        library_music
+                    </span>
+                </div>
+                <div onclick="keypress(this.id)" class="keywhite" id='g'>
+                    <span class="material-symbols-outlined fillPink rotate">
+                        call
+                    </span>
+                </div>
+                <div onclick="keypress(this.id)" class="keywhite" id='h'>
+                    <span class="material-symbols-outlined fillPink rotate">
+                        settings
+                    </span>
+                </div>
+                <div onclick="keypress(this.id)" class="keywhite fillPink" id='j'></div> 
+    
+            </div>
         </div>
-        <div class="whitekeys">
-            <div onclick="keypress(this.id)" class="keywhite" id='a'>
-                <span class="material-symbols-outlined fillPink">
-                    home
-                </span>
-            </div>  
-            <div onclick="keypress(this.id)" class="keywhite" id='s'>
-                <span class="material-symbols-outlined fillPink">
-                    person
-                </span>
-            </div>
-            <div onclick="keypress(this.id)" class="keywhite" id='d'>
-                <span class="material-symbols-outlined fillPink">
-                    library_books
-                </span>
-            </div>
-            <div onclick="keypress(this.id)" class="keywhite" id='f'>
-                <span class="material-symbols-outlined fillPink">
-                    library_music
-                </span>
-            </div>
-            <div onclick="keypress(this.id)" class="keywhite" id='g'>
-                <span class="material-symbols-outlined fillPink">
-                    call
-                </span>
-            </div>
-            <div onclick="keypress(this.id)" class="keywhite" id='h'>
-                <span class="material-symbols-outlined fillPink">
-                    settings
-                </span>
-            </div>
-            <div onclick="keypress(this.id)" class="keywhite fillPink" id='j'></div> 
-
-        </div>
+        
+       
 
     </div>
 </body>
