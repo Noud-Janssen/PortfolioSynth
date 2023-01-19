@@ -16,15 +16,18 @@ function start() {
     
 }
 
+
+
 var navopen = true;
 function usenav() {
     if (navunlock == true) {
         if (navopen == true) {
-            document.querySelector('#navbar').style.transform = 'translatey(10vh)'
+            document.querySelector('#navbar').style.transform = 'var(--translateNavBar)'
             document.querySelector('.keyboard').style.transform = 'translatey(250%)'
             document.querySelector('#pagecontent').style.top = 'var(--topPageContentNav)'
             document.querySelector('#pagecontent').style.height = 'var(--heightPageContentNav)'
-            document.querySelector('#usenavbut').style.transform = 'translatey(10vh)'
+            document.querySelector('#usenavbut').style.transform = 'var(--translateNavBar)'
+            document.querySelector('#usenavbut').style.width = 'var(--widthUseNavBut)'
             document.querySelector('#usenavbutsvg').style.transform = 'rotate(180deg)'
             navopen = false;
             keyunlock = false;
@@ -35,6 +38,7 @@ function usenav() {
             document.querySelector('#pagecontent').style.top = 'var(--topPageContent)'
             document.querySelector('#pagecontent').style.height = 'var(--heightPageContent)'
             document.querySelector('#usenavbut').style.transform = 'translatey(0)'
+            document.querySelector('#usenavbut').style.width = '20vh'
             document.querySelector('#usenavbutsvg').style.transform = 'rotate(0deg)'
             
             navopen = true;
@@ -47,8 +51,15 @@ function usenav() {
 }
 
 function clickNavBut(page, id) {
+    console.log("1")
     setButtonCss(id);
+    console.log("2")
     setpage(page)
+    let w = window.innerWidth;
+    console.log(w)
+    if (w <= 600) {
+        usenav()
+    }
 }
 
 function setButtonCss(id) {
@@ -106,7 +117,33 @@ function setpage(id) {
         for (var i = 0 ; i<element.length ; i++) {
             element[i].style.opacity = '0';
             element[i].style.transform = 'translatex(0)'
+        
+            
+            }
+            switch (id) {
+                case 'a':
+                    setButtonCss('navbut1');
+                break;
+                case 's':
+                    setButtonCss('navbut2')
+                break;
+                case 'd':
+                    setButtonCss('navbut3')
+                break;
+                case 'f':
+                    setButtonCss('navbut4')
+                break;
+                case 'g':
+                    setButtonCss('navbut5')
+                break;
+                default:
+                    elements = document.getElementsByClassName("navbut")
+                    for (i = 0 ; i < elements.length ; i++) {
+                        elements[i].style.borderBottom = "none";
+                    }
+                break;
         }
+    
 
         var selectid = document.querySelector('.' + id)
         selectid.style.opacity = '1';

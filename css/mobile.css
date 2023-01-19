@@ -1,7 +1,7 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation: portrait) {
 
     :root {
-        --widthKey: 4vh;
+        --widthKey: 3vh;
         --heightKey: calc(var(--widthKey) * 2.5);
         --bordMarKey: 0.75vh; 
 
@@ -19,6 +19,14 @@
 
         --fontsizeKey: 0px;
         --fontsizeMed: 2vh;
+        --fontsizeBig: 5vh;
+
+        /** transform nav **/
+        --navBarHeight: 91vh;
+        --translateNavBar: translatey(91vh);
+        --topPageContentNav: 200vh;
+        --widthUseNavBut: 120vw;
+
     }
 
     /** mobile default **/
@@ -56,6 +64,23 @@
         display: none;
     }
 
+
+
+    /** navigatie **/
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+        height: 91vh;
+        top: -92vh
+    }
+
+    .navbut {
+        width: 80%;
+    }
     /** Intro Specific **/
     h1 {
         width: 80vw;

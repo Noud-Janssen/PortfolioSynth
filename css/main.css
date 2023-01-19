@@ -28,8 +28,13 @@
 
     --fontsizeKey: 35px;
     --fontsizeMed: calc(3vh);
-    --fontsizeBig: 5vh;
+    --fontsizeBig: 7vh;
     --fontsizeSmall: 25px;
+
+
+    /** transform nav **/
+    --translateNavBar: translatey(10vh);
+    --widthUseNavBut: 20vh;
 }
 
 
@@ -47,7 +52,7 @@ canvas {
 h1 {
     color: var(--black);
     border-radius: 10px;
-    font-size: 5vw;
+    font-size: var(--fontsizeBig);
     width: 100vw;
 }
 
@@ -64,7 +69,7 @@ h2 {
 }
 
 .title {
-    font-size: 4vw;
+    font-size: calc(var(--fontsizeBig) * 0.9);
     text-align: right;
     padding-right: 0vw;
     width: 50vw;
@@ -171,6 +176,10 @@ nav {
     height: 10vh;
     cursor: pointer;
     color: var(--black);
+}
+
+#navbut1 {
+    border-bottom: var(--green) 1vh solid;
 }
 
 /**.navbut:hover {
