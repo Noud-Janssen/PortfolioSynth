@@ -133,9 +133,6 @@ nav {
 
     width: 20vh;
     height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     transform: translateY(-100%);
 

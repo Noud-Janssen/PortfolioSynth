@@ -81,6 +81,21 @@
     .navbut {
         width: 80%;
     }
+
+    #usenavbut {
+        left: auto;
+        right: -10vh;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #usenavbut:hover {
+        box-shadow: none;
+        
+    }
     /** Intro Specific **/
     h1 {
         width: 80vw;
