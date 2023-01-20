@@ -8,6 +8,16 @@
             width: 15vw;
         }
 
+        #usenavbut {
+            left: -10vh;
+            right: auto;
+        }
+
+        #usenavbut:hover {
+            box-shadow: none;
+            
+        }
+
         .keyboard {
             left: auto;
             bottom: 1vh;
@@ -23,6 +33,10 @@
             height: 90vh;
         }
 
+        .col-80 {
+            width: 40%;
+        }
+
         .col-20 {
             height: 30vh;
             flex-direction: row;
@@ -32,6 +46,8 @@
 
             position: fixed;
             right: 1vw;
+
+            transform: translatex(100%);
         }
 
         .projectselect {

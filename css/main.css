@@ -152,8 +152,7 @@ nav {
 }
 
 .margin-a {
-    margin-right: 3vh;
-    margin-bottom: 3vh;
+    margin: 15%;
 }
 
 #usenavbut:hover {
@@ -166,18 +165,22 @@ nav {
     box-sizing:content-box;
     transition-duration: 0s;
 
+    font-size: calc(var(--fontsizeMed) * 0.8);
 
     border: none;
     background: none;
-    width: 10vh;
+    width: 10%;
     height: 10vh;
     cursor: pointer;
     color: var(--black);
 }
 
-#navbut1 {
+.navbutSelected {
     border-bottom: var(--green) 1vh solid;
+    color: var(--green);
+    font-size: calc(var(--fontsizeMed) * 1) ;
 }
+
 
 /**.navbut:hover {
     border-bottom: var(--green) 4px solid;
@@ -436,15 +439,13 @@ nav {
 }
 
 .projectselected {
-    height: 20%;
-    border-bottom: 15px solid var(--green);
-    text-decoration: dashed;
+    font-size: calc(var(--fontsizeBig) / 2);
+    color: var(--green);
 }
 
 .projectselectedmusic {
-    height: 20%;
-    border-bottom: 15px solid var(--green);
-    text-decoration: dashed;
+    font-size: calc(var(--fontsizeBig) / 2);
+    color: var(--green);
 }
 
 #home {

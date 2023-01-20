@@ -31,6 +31,11 @@ function usenav() {
             document.querySelector('#usenavbutsvg').style.transform = 'rotate(180deg)'
             navopen = false;
             keyunlock = false;
+            let w = window.innerWidth;
+            console.log(w)
+            if (w <= 600) {
+            document.querySelector('.margin-a').style.marginLeft = '40%'
+            }
         }
         else {
             document.querySelector('#navbar').style.transform = 'translatey(0)'
@@ -40,6 +45,9 @@ function usenav() {
             document.querySelector('#usenavbut').style.transform = 'translatey(0)'
             document.querySelector('#usenavbut').style.width = '20vh'
             document.querySelector('#usenavbutsvg').style.transform = 'rotate(0deg)'
+            document.querySelector('.margin-a').style.marginLeft = '15%'
+
+
             
             navopen = true;
             keyunlock = true;
@@ -65,9 +73,9 @@ function clickNavBut(page, id) {
 function setButtonCss(id) {
     elements = document.getElementsByClassName("navbut")
     for (i = 0 ; i < elements.length ; i++) {
-        elements[i].style.borderBottom = "none";
+        elements[i].classList.remove("navbutSelected");
     }
-    document.querySelector('#' + id).style.borderBottom = "var(--green) 1vh solid";
+    document.querySelector('#' + id).classList.add("navbutSelected");
 }
 
 function keypress(clicked_id) {
@@ -114,7 +122,7 @@ var selectedprojectmusic = "pm1"
 function setpage(id) {
     if (id == 'a' || id == 's' || id == 'd' || id == 'f' || id == 'g' || id ==  'h' || id == 'j') {
         var element = document.querySelectorAll('.content');
-        for (var i = 0 ; i<element.length ; i++) {
+        for (var i = 0 ; i < element.length ; i++) {
             element[i].style.opacity = '0';
             element[i].style.transform = 'translatex(0)'
         
@@ -129,9 +137,11 @@ function setpage(id) {
                 break;
                 case 'd':
                     setButtonCss('navbut3')
+                    document.querySelectorAll('.col-20')[0].style.transform = 'translatex(0)'
                 break;
                 case 'f':
                     setButtonCss('navbut4')
+                    document.querySelectorAll('.col-20')[1].style.transform = 'translatex(0)'
                 break;
                 case 'g':
                     setButtonCss('navbut5')

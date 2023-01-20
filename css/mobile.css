@@ -10,7 +10,7 @@
         
 
         --heightPageContent: calc(70vh - 8vw * 4);
-        --topPageContent: 15vh;
+        --topPageContent: 5vh;
 
         --heightPageContentNav: 70vh;
         --topPageContentNav: 25vh;
@@ -25,7 +25,7 @@
         --navBarHeight: 91vh;
         --translateNavBar: translatey(91vh);
         --topPageContentNav: 200vh;
-        --widthUseNavBut: 120vw;
+        --widthUseNavBut: 122vw;
 
     }
 
@@ -42,6 +42,8 @@
 
     .col-20 {
         justify-content: flex-start;
+        margin-top: 10vh;
+        z-index: -10;
     }
 
     .row-80-mobile {
@@ -75,11 +77,16 @@
         align-items: center;
         align-content: stretch;
         height: 91vh;
-        top: -92vh
+        top: -92vh;
+        z-index: 11;
     }
 
     .navbut {
         width: 80%;
+        font-size: calc(var(--fontsizeMed) * 1.0);
+    }
+    .navbutSelected{
+        font-size: calc(var(--fontsizeMed) * 1.5);
     }
 
     #usenavbut {
@@ -88,13 +95,21 @@
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 10px;
 
+        display: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: flex-end;
+        align-content: flex-start;
+        z-index: 10;
     }
 
     #usenavbut:hover {
         box-shadow: none;
         
+    }
+    .margin-a {
+        margin-bottom: 7.5%;
     }
     /** Intro Specific **/
     h1 {
@@ -146,23 +161,22 @@
 
     .projectselect {
         height: 25px;
-        width: 80%;
+        width: 100%;
         font-size: 15px;
         margin: 10px;
+        text-align: right;
     }
 
     .projectselected {
         height: 25px;
         width: 100%;
-        border-right: 5px solid var(--green);
-        border-bottom: none;
+        font-size: calc(var(--fontsizeBig) / 2);
     }
 
     .projectselectedmusic {
         height: 25px;
         width: 100%;
-        border-right: 5px solid var(--green);
-        border-bottom: none;
+        font-size: calc(var(--fontsizeBig) / 2);
     }
 
     /** keyboard specific **/
