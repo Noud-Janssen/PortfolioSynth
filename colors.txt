@@ -4,3 +4,8 @@
 
     --accent2: #2541B2;
     --accent3: #A167A5;
+
+    Color pallete 2
+    --black: #ccc5b9;
+    --pink: #252422;
+    --green: #eb5e28;

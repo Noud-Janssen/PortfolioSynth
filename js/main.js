@@ -16,8 +16,6 @@ function start() {
     
 }
 
-
-
 var navopen = true;
 function usenav() {
     if (navunlock == true) {

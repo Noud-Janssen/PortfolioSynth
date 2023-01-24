@@ -3,14 +3,20 @@
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     transition-duration: 0.5s;
-    color: #2b2d42;
+    color: var(--white);
 }
 
 :root {
-    --black: #ccc5b9;
-    --pink: #252422;
-    --green: #eb5e28;
-    --rust: #E04E15;
+    --black: #000000;
+    --black-2: #1d2d44;
+    --accent: #A44200;
+    --white: #F0EFF4;
+
+    --red: red;
+    --green-2: green;
+    --blue: blue;
+    --yellow: yellow;
+
     --widthKey: calc(6vh);
     --heightKey: calc(6vh * 2.5);
     --bordMarKey: calc(1.5vh);
@@ -41,6 +47,8 @@
 
 body {
     background-color: var(--black);
+    background-size: contain;
+    background-position: center;
 }
 
 canvas {
@@ -50,10 +58,12 @@ canvas {
 }
 
 h1 {
-    color: var(--black);
+    color: var(--white);
     border-radius: 10px;
     font-size: var(--fontsizeBig);
     width: 100vw;
+
+    
 }
 
 h2 {
@@ -75,19 +85,18 @@ h2 {
     width: 50vw;
 }
 
-#enterButton:hover {
-    text-decoration: underline;
-    box-shadow:  2.5px 2.5px 10px #5a5a5a,
-    -2.5px -2.5px 10px #ffffff;
+.dispenseParent:hover {
+    
 }
 
 #enterButton {
-
+    box-shadow:
+    2.5px 2.5px 10px #ffffff;
 
     font-size: 3vw;
     width: 10vw;
     height: 10vw;
-    background-color: var(--green);
+    background-color: var(--black);
     border-radius: 100px;
 
     cursor: pointer;
@@ -99,13 +108,60 @@ h2 {
 
 }
 
+.dispenseParent:hover .dispense1 {
+    transform: translate(-1vw, -1.5vh);
+}
+.dispenseParent:hover .dispense2 {
+    transform: translate(-0.5vw, 1.3vh);
+}
+.dispenseParent:hover .dispense3 {
+    transform: translate(0vw, -0.8vh);
+}
+.dispenseParent:hover .dispense4 {
+    transform: translate(0.5vw, 0.7vh);
+}
+.dispenseParent:hover .dispense5 {
+    transform: translate(1vw, -1.5vh);
+}
+
+.colorSun {
+    animation-name: colorSun;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+}
+
+
+@keyframes colorSun {
+    0% {
+        box-shadow:
+        0 0 10vw var(--red);
+    }
+    25% {
+        box-shadow:
+        0 0 10vw var(--green-2);
+    }
+    50% {
+        box-shadow:
+        0 0 10vw var(--yellow);
+    }
+    75% {
+        box-shadow:
+        0 0 10vw var(--blue);
+    }
+    100% {
+        box-shadow:
+        0 0 10vw var(--red);
+    }
+}
+
 p {
     font-size: var(--fontsizeMed);
 }
 
 /**Navigatie**/
 nav {
-    background-color: var(--pink);
+    background-color: var(--white);
     width: 100vw;
     height: 11vh;
 
@@ -125,9 +181,9 @@ nav {
 #usenavbut {
     border: none;
     background: none;
-    color: var(--green);
+    color: var(--accent);
 
-    background-color: var(--pink);
+    background-color: var(--white);
 
     border-bottom-right-radius: 10px;
 
@@ -156,7 +212,7 @@ nav {
 }
 
 #usenavbut:hover {
-    box-shadow: var(--green) 1vh 1vh;
+    box-shadow: var(--accent) 1vh 1vh 2vh;
     
 }
 
@@ -176,14 +232,14 @@ nav {
 }
 
 .navbutSelected {
-    border-bottom: var(--green) 1vh solid;
-    color: var(--green);
+    border-bottom: var(--accent) 1vh solid;
+    color: var(--accent);
     font-size: calc(var(--fontsizeMed) * 1) ;
 }
 
 
 /**.navbut:hover {
-    border-bottom: var(--green) 4px solid;
+    border-bottom: var(--accent) 4px solid;
 }**/
 
 /**Intro Scherm**/
@@ -207,7 +263,7 @@ nav {
 
     background: none;
     font-size: calc(var(--fontsizeMed) * 1.5);
-    color: var(--green);
+    color: var(--accent);
 
     position: fixed;
     bottom: calc(var(--heightKeyB) + 150px);
@@ -233,7 +289,9 @@ nav {
 #landingpage {
     width: 100vw;
     height: 100vh;
-    background-color: var(--pink);
+    background-color: var(--black);
+
+    position: fixed;
 
     transition-duration: 0.5s;
 
@@ -249,15 +307,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 100vw;
+    align-items: space-between;
+    width: 90vw;
 }
 
 #langBut {
-    width: 10vw;
-    height: 10vh;
-    background-color: var(--green);
-    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--accent);
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -276,7 +334,7 @@ nav {
 
 .langSelected {
     background-color: var(--black);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #bladmuziek {
@@ -366,7 +424,7 @@ nav {
     top: var(--topPageContent);
     left: 10vw;
 
-    border-left: var(--green) solid 10px;
+    border-left: var(--accent) solid 10px;
     padding-left: 10px;
 
 }
@@ -440,12 +498,12 @@ nav {
 
 .projectselected {
     font-size: calc(var(--fontsizeBig) / 2);
-    color: var(--green);
+    color: var(--accent);
 }
 
 .projectselectedmusic {
     font-size: calc(var(--fontsizeBig) / 2);
-    color: var(--green);
+    color: var(--accent);
 }
 
 #home {
@@ -501,7 +559,7 @@ nav {
     width: var(--widthKey);
     height: var(--heightKey);
     background-color: var(--black);
-    border: var(--pink) var(--bordMarKey) solid;
+    border: var(--white) var(--bordMarKey) solid;
     transition-duration: 1s;
     margin: var(--bordMarKey);
 
@@ -509,7 +567,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    color: var(--green);
+    color: var(--accent);
     font-size: 0px;
 
     cursor: pointer;
@@ -522,7 +580,7 @@ nav {
     width: var(--widthKey);
     height: var(--heightKey);
     background-color: var(--black);
-    border: var(--green) var(--bordMarKey) solid;
+    border: var(--accent) var(--bordMarKey) solid;
     transition-duration: 1s;
     margin: var(--bordMarKey);
     margin-bottom: 0px;
@@ -557,13 +615,13 @@ nav {
 }
 
 .fillGreen{
-    color: var(--green);
-    fill: var(--green);
+    color: var(--accent);
+    fill: var(--accent);
 }
 
 .fillPink {
-    color: var(--pink);
-    fill: var(--pink);
+    color: var(--white);
+    fill: var(--white);
 }
 
 @keyframes selectProject {
