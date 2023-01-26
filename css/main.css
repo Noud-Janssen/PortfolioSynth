@@ -7,10 +7,10 @@
 }
 
 :root {
-    --black: #000000;
+    --black: #262322;
     --black-2: #1d2d44;
-    --accent: #A44200;
-    --white: #F0EFF4;
+    --accent: #CC5803;
+    --white: #F2E5D7;
 
     --red: red;
     --green-2: green;
@@ -61,13 +61,14 @@ h1 {
     color: var(--white);
     border-radius: 10px;
     font-size: var(--fontsizeBig);
-    width: 100vw;
+    width: 90vw;
 
     
 }
 
 h2 {
     font-size: var(--fontsizeBig);
+    margin-bottom: 2.5%;
 }
 
 .visMobile {
@@ -83,10 +84,6 @@ h2 {
     text-align: right;
     padding-right: 0vw;
     width: 50vw;
-}
-
-.dispenseParent:hover {
-    
 }
 
 #enterButton {
@@ -237,11 +234,6 @@ nav {
     font-size: calc(var(--fontsizeMed) * 1) ;
 }
 
-
-/**.navbut:hover {
-    border-bottom: var(--accent) 4px solid;
-}**/
-
 /**Intro Scherm**/
 
 .introScherm {
@@ -298,7 +290,7 @@ nav {
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	align-content: stretch;
 }
@@ -512,6 +504,18 @@ nav {
 
 .nonactive {
     opacity: 0; 
+}
+
+/** contact **/
+.info-block {
+    width: 100%;
+    padding-top: 10%;
+    font-size: var(--fontsizeMed);
+}
+
+.value {
+    border-bottom: var(--accent) 2px solid;
+    font-size: calc(var(--fontsizeMed) * 1.5);
 }
 
 /**Navigatie keyboard**/

@@ -31,8 +31,8 @@ function usenav() {
             keyunlock = false;
             let w = window.innerWidth;
             console.log(w)
+
             if (w <= 600) {
-            document.querySelector('.margin-a').style.marginLeft = '40%'
             }
         }
         else {
@@ -43,7 +43,6 @@ function usenav() {
             document.querySelector('#usenavbut').style.transform = 'translatey(0)'
             document.querySelector('#usenavbut').style.width = '20vh'
             document.querySelector('#usenavbutsvg').style.transform = 'rotate(0deg)'
-            document.querySelector('.margin-a').style.marginLeft = '15%'
 
 
             
@@ -83,10 +82,10 @@ function keypress(clicked_id) {
 
     var check = document.querySelector('.keyblack#' + clicked_id);
     if (check == null) {
-        color = 'var(--pink)';
+        color = 'var(--white)';
     }
     else {
-        color = 'var(--green)';
+        color = 'var(--accent)';
     }
 
     key.style.transitionDuration = '0s';
@@ -200,16 +199,16 @@ function setpage(id) {
 }
 
 const projectTitle = [
+    "Projects",
     "Mastermind",
-    "Project 2",
-    "Project 3",
+    "Mini consoles",
     "Project 4",
     "Project 5",
     "Project 6"
 ]
 const projectPara = [
-    "Mastermind",
-    "Project 2",
+    "",
+    "Het eerste project, Mastermind, kwam van een school opdracht: <br> Het namaken van mastermind in java. <br> <br> ",
     "Project 3",
     "Project 4",
     "Project 5",
