@@ -9,7 +9,7 @@
         --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
         
 
-        --heightPageContent: calc(70vh - 8vw * 4);
+        --heightPageContent: calc(80vh - 8vh);
         --topPageContent: 5vh;
 
         --heightPageContentNav: 70vh;
@@ -34,6 +34,18 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
+    #home {
+        flex-direction: row;
+    }
+
+    img {
+        margin-top: 10vh;
+        width: 80%;
+        height: fit-content;
+    }
+
+
 
     .col {
         width: 100%;

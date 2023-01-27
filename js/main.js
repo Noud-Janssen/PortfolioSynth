@@ -181,7 +181,7 @@ function setpage(id) {
     else if (id == "u") {
         if (selectpage == "d") {
             selectedproject = selectedproject.split('p').pop();
-            if (selectedproject < 6) {
+            if (selectedproject < 3) {
             selectedproject++;
             }
             selectedproject = "p" + selectedproject;
@@ -189,7 +189,7 @@ function setpage(id) {
         }
         else if (selectpage == "f") {
             selectedprojectmusic = selectedprojectmusic.split('m').pop();
-            if (selectedprojectmusic < 6) {
+            if (selectedprojectmusic < 4) {
             selectedprojectmusic++;
             }
             selectedprojectmusic = "m" + selectedprojectmusic;
@@ -199,7 +199,7 @@ function setpage(id) {
 }
 
 const projectTitle = [
-    "Projects",
+    "<span class='naamColor'>Noud</span> als software developer:",
     "Mastermind",
     "Mini consoles",
     "Project 4",
@@ -207,7 +207,7 @@ const projectTitle = [
     "Project 6"
 ]
 const projectPara = [
-    "",
+    "Ik ben een eerste jaars software developer student, op mbo roc Nijmegen, met ervaring in <span class='html langTitle'>HTML</span>, <span class='css langTitle'>CSS</span>, <span class='js langTitle'>JavaScript</span> en <span class='java langTitle'><span class='javaJ'>J</span>ava</span>. <br> <br> Ook ben ik buiten mijn opleiding <span class='lua langTitle'>Lua</span> aan het leren.",
     "Het eerste project, Mastermind, kwam van een school opdracht: <br> Het namaken van mastermind in java. <br> <br> ",
     "Project 3",
     "Project 4",
@@ -216,7 +216,7 @@ const projectPara = [
 ]
 
 const projectTitleMusic = [
-    "Componeren",
+    "<span class='naamColor'>Noud</span> als Muziekant:",
     "Les geven",
     "Slagwerker 1ste divisie",
     "Project 4",

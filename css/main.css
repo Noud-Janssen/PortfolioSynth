@@ -43,6 +43,36 @@
     --widthUseNavBut: 20vh;
 }
 
+.langTitle {
+    border-top-right-radius: calc(var(--fontsizeMed) / 2);
+    border-bottom-left-radius: calc(var(--fontsizeMed) / 2);
+}
+
+.html {
+    background-color: #E44D26;
+}
+.css {
+    background-color: #264de4;
+}
+.js {
+    background-color: #f0db4f;
+    color: black;
+}
+
+.java {
+    background-color: var(--white);
+    color: #5382a1;
+}
+
+.javaJ {
+    color: #f89820;
+}
+
+.lua {
+    background-color: #000080;
+    color: var(--white);
+    border: calc(var(--fontsizeSmall) / 8) dashed #808080;
+}
 
 
 body {
@@ -69,6 +99,24 @@ h1 {
 h2 {
     font-size: var(--fontsizeBig);
     margin-bottom: 2.5%;
+}
+
+.naamColor {
+    color: var(--accent);
+    text-decoration: underline var(--white);
+}
+
+img {
+    height: 90%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 10px 10px 10px var(--accent);
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .visMobile {
