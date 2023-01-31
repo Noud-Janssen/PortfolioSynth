@@ -34,7 +34,7 @@
 
     --fontsizeKey: 35px;
     --fontsizeMed: calc(3vh);
-    --fontsizeBig: 7vh;
+    --fontsizeBig: 5vh;
     --fontsizeSmall: 25px;
 
 
@@ -45,7 +45,6 @@
 
 .langTitle {
     border-top-right-radius: calc(var(--fontsizeMed) / 2);
-    border-bottom-left-radius: calc(var(--fontsizeMed) / 2);
 }
 
 .html {
@@ -101,9 +100,26 @@ h2 {
     margin-bottom: 2.5%;
 }
 
+.h2space {
+    height: calc(var(--fontsizeBig) * 1.31);
+    margin-bottom: 2.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
 .naamColor {
     color: var(--accent);
     text-decoration: underline var(--white);
+}
+
+i {
+    color: var(--accent);
 }
 
 img {
@@ -111,6 +127,24 @@ img {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: 10px 10px 10px var(--accent);
+    
+}
+
+#homeFoto {
+    animation-name: FromRight;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes FromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .centre {
@@ -498,7 +532,7 @@ nav {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .row {
@@ -537,12 +571,12 @@ nav {
 }
 
 .projectselected {
-    font-size: calc(var(--fontsizeBig) / 2);
+    font-size: calc(var(--fontsizeMed) * 1.2);
     color: var(--accent);
 }
 
 .projectselectedmusic {
-    font-size: calc(var(--fontsizeBig) / 2);
+    font-size: calc(var(--fontsizeMed) * 1.2);  
     color: var(--accent);
 }
 
@@ -564,6 +598,12 @@ nav {
 .value {
     border-bottom: var(--accent) 2px solid;
     font-size: calc(var(--fontsizeMed) * 1.5);
+}
+
+@media only screen and (max-width: 1200px) {
+    .value {
+        font-size: calc(var(--fontsizeMed) * 1);
+    }
 }
 
 /**Navigatie keyboard**/

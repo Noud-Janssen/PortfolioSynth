@@ -128,6 +128,8 @@ function setpage(id) {
             switch (id) {
                 case 'a':
                     setButtonCss('navbut1');
+                    document.querySelector('#homeFoto').animate()
+                    
                 break;
                 case 's':
                     setButtonCss('navbut2')

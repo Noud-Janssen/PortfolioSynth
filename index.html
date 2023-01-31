@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/mobileLandscape.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,14 +65,16 @@
             <div class="col visDesktop">
                 <h2>Welkom.</h2>
                 <p>
-                    Navigeer door op de toetsen van het key-board hier beneden te drukken. <br> <br>Wil je liever een traditionele manier van navigatie gebruiken? Druk dan op de knop links boven.
+                    Om mijn liefde voor <span class="naamColor">muziek</span> en <span class="naamColor">software</span> te combineren, heeft deze site een muziekaal <i>tintje</i>. <br> <br> Wil je naar een andere pagina? Druk op de toetsen hieronder. <br> <br> Als je wilt, kan je ook de knop links boven gebruiken, om op een traditionele manier te navigeren.
                 </p>    
             </div>
             <div class="col visMobile">
-                <h2>Hoi!</h2>
-                <p>Op deze site kan je navigeren met het keyboard hier beneden. <br> <br> Door links boven te klikken, kan je naar een klassiekere manier van navigeren gaan. <br> <br> Het werkt het beste met een gedraaide telefoon!</p>    
+                <h2>Welkom.</h2>
+                <p>
+                    Om mijn liefde voor muziek en Software te combineren, heeft deze site een muziekaal tintje. <br> <br> Wil je naar een andere pagina? Druk op de toetsen hieronder. <br> <br> Als je wilt, kan je ook de knop rechts boven gebruiken, om op een traditionele manier te navigeren.
+                </p>        
             </div>
-            <div class="col centre"><img src="assets/images/WelkomFoto.jpg" alt="Image not found"></div>
+            <div class="col centre"><img id="homeFoto" src="assets/images/WelkomFoto.jpg" alt="Image not found"></div>
         </div>
         <div class="nohelp content s" id="aboutme">
             <div class="col">
@@ -80,15 +84,15 @@
         </div>
         <div class="nohelp content d" id="projects">
             <div class="col-80">
-                <h2 id="projectTitle"><span class="naamColor">Noud</span> als software developer:</h2>
-                <p id="projectParagraph">Ik ben een eerste jaars software developer student, op mbo roc Nijmegen, met ervaring in <span class='html langTitle'>HTML</span>, <span class='css langTitle'>CSS</span>, <span class='js langTitle'>JavaScript</span> en <span class='java langTitle'><span class='javaJ'>J</span>ava</span>. <br> <br> Ook ben ik buiten mijn opleiding <span class='lua langTitle'>Lua</span> aan het leren.</p>    
+                <h2 id="projectTitle"><span class="naamColor">Noud</span> als Developer:</h2>
+                <p id="projectParagraph">Ik ben een eerste jaars software developer student, op mbo roc Nijmegen     met ervaring in: <br> <span class='html langTitle'>HTML</span> <span class='css langTitle'>CSS</span> <span class='js langTitle'>JavaScript</span> <span class='java langTitle'><span class='javaJ'>J</span>ava</span> <br> <br> Ook ben ik buiten mijn opleiding <span class='lua langTitle'>Lua</span> aan het leren.</p>    
             </div>
             <div class="col-20">
                 <div onclick="setproject(this.id)" class="projectselect projectselected" id="p1">
                     Main
                 </div>
                 <div onclick="setproject(this.id)" class="projectselect" id="p2">
-                    Mastermind
+                    Talen
                 </div>
                 <div onclick="setproject(this.id)" class="projectselect" id="p3">
                     Miniconsoles
@@ -117,10 +121,25 @@
             </div>
         </div>
         <div class="nohelp content g" id="contact">
-            <div class="col">
-                <h2>Contact</h2>
+            <div class="col visDesktop">
+                <h2>Contact:</h2>
                 <div class="info-block">
                     Telefoon: <div class="value">06-19508122</div><br> <br>
+                    Email: <div class="value">Noudjanssen123@gmail.com</div>
+                </div>     
+            </div>
+            <div class="col visDesktop">
+                <div class="h2space"></div>
+                <div class="info-block">
+                    Github.com <div class="value"><a href="https://github.com/Noud-Janssen" target="_blank">/Noud-Janssen</a></div><br> <br>
+                </div>     
+            </div>
+            <div class="col visMobile">
+                <h2>Contact:</h2>
+                <div class="info-block">
+                    Telefoon: <div class="value">06-19508122</div><br> <br>
+                    Email: <div class="value">Noudjanssen123@gmail.com</div> <br> <br>
+                    Github.com <div class="value"><a href="https://github.com/Noud-Janssen" target="_blank">/Noud-Janssen</a></div><br> <br>
                     Email: <div class="value">Noudjanssen123@gmail.com</div>
                 </div>     
             </div>
