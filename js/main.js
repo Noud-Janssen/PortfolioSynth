@@ -100,6 +100,8 @@ function keypress(clicked_id) {
         setpage(clicked_id) 
     }
 
+    
+
 }
 
 var keyunlock = true;
@@ -128,7 +130,6 @@ function setpage(id) {
             switch (id) {
                 case 'a':
                     setButtonCss('navbut1');
-                    document.querySelector('#homeFoto').animate()
                     
                 break;
                 case 's':
