@@ -18,8 +18,8 @@
         --leftContent: -97.5vw;
 
         --fontsizeKey: 0px;
-        --fontsizeMed: 2vh;
-        --fontsizeBig: 5vh;
+        --fontsizeMed: 1.5vh;
+        --fontsizeBig: 4vh;
 
         /** transform nav **/
         --navBarHeight: 91vh;
