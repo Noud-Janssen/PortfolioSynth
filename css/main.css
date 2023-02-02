@@ -229,7 +229,13 @@ img {
 }
 
 p {
-    font-size: var(--fontsizeMed);
+    font-size: calc(var(--fontsizeMed) * 1);
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+    p {
+        font-size: calc(var(--fontsizeMed) * 0.8);
+    }
 }
 
 /**Navigatie**/

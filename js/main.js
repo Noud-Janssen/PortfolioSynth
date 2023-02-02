@@ -186,7 +186,7 @@ function setpage(id) {
     else if (id == "u") {
         if (selectpage == "d") {
             selectedproject = selectedproject.split('p').pop();
-            if (selectedproject < 3) {
+            if (selectedproject < 2) {
             selectedproject++;
             }
             selectedproject = "p" + selectedproject;
@@ -212,9 +212,9 @@ const projectTitle = [
     "Project 6"
 ]
 const projectPara = [
-    "Ik ben een eerste jaars software developer, met hart voor: <br> <br> <span class='naamColor'>Design</span>. <br> <br> <span class='naamColor'>Functionaliteit</span>. <br> <br> <span class='naamColor'>User experience</span>. <br><br>",
+    "Ik ben een eerste jaars software developer, met hart voor: <br> <span class='naamColor'>Design</span>. <br> <span class='naamColor'>Functionaliteit</span>. <br> <span class='naamColor'>User experience</span>. <br><br> Deze kwaliteiten komen goed van pas, aangezien ik de <span class='naamColor'>front-end</span> development kant op wil gaan.",
     "Talen waarvan ik ervaring heb zijn: <br><br> <div class='row-100'><div class='html langTitle'>HTML</div><br> <div class='css langTitle'>CSS</div><br> <div class='js langTitle'>JavaScript</div><br> <div class='java langTitle'><span class='javaJ'>J</span>ava</div><div class='langTitle lua'>Lua</div></div>",
-    "Project 3",
+    "In mijn vrije tijd ben ik bezig met simpele games te maken, zo ook deze 'mini console'. <br><br>Een web-based gamboy clone, welke simpele games speelt. <br><br>(Nog work-in-progres) ",
     "Project 4",
     "Project 5",
     "Projct 6"
@@ -223,16 +223,16 @@ const projectPara = [
 const projectTitleMusic = [
     "<span class='naamColor'>Noud</span> als Muziekant:",
     "Les geven",
-    "Slagwerker 1ste divisie",
-    "Project 4",
+    "Slagwerker",
+    "Componist",
     "Project 5",
     "Project 6"
 ]
 const projectParaMusic = [
-    "Mastermind",
-    "Project 2",
-    "Project 3",
-    "Project 4",
+    "Muziek is al heel mijn leven lang belangerijk, zolang ik me kan herrineren ben ik bezig met het spelen, schrijven en luisteren naar muziek. <br> <br>Het behalen van C diploma melodisch slagwerk en muziek examen HAVO heeft ervoor gezorgd dat muziek voor mij als tweede taal voelt. ",
+    "Met veel plezier geef ik slagwerk les, gefocust op straat marsen, voor leerlingen van muziekvereneging Ons Genoegen. <br><br>",
+    "Ik speel als slagwerker bij muziek vereneging Ons Genoegen. Bij het eerste devisie slagwerk corps en bij de eerste devisie fanfare corps.<br><br>Ik ben het meest gefocust op <span class='naamColor'>melodisch</span> slagwerk, al zal ik ongestemd slagwerk zeker niet laten liggen als die moet worden ingevuld.",
+    "Als eind opdracht voor de HAVO, werd ons opgedragen om een compositie te schrijven. <br><br>Ik kan met trots zeggen dat ik deze opdracht met een 9.5 heb afgerond.<br><br> Deze opdracht heeft voor mij het vuurtje aangestoken, en ben sindsdien niet meer gestopt met het schrijven van muziek. Vandaar ook de droom om te werken als klassiek/tv/game componist.",
     "Project 5",
     "Projct 6"
 ]

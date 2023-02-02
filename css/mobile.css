@@ -18,7 +18,7 @@
         --leftContent: -97.5vw;
 
         --fontsizeKey: 0px;
-        --fontsizeMed: 1.5vh;
+        --fontsizeMed: 2vh;
         --fontsizeBig: 4vh;
 
         /** transform nav **/
@@ -197,13 +197,13 @@
     .projectselected {
         height: 25px;
         width: 100%;
-        font-size: calc(var(--fontsizeBig) / 2);
+        font-size: calc(var(--fontsizeBig) / 1.5);
     }
 
     .projectselectedmusic {
         height: 25px;
         width: 100%;
-        font-size: calc(var(--fontsizeBig) / 2);
+        font-size: calc(var(--fontsizeBig) / 1.5);
     }
 
     /** keyboard specific **/
