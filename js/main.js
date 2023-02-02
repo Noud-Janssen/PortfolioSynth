@@ -1,5 +1,6 @@
 var navunlock = false;
 var selectpage ="a";
+
 function start() {
         document.querySelector('#landingpage').style.opacity = '0';
         document.querySelector('#pagecontent').style.display = 'inline';
@@ -87,6 +88,7 @@ function keypress(clicked_id) {
     else {
         color = 'var(--accent)';
     }
+
 
     key.style.transitionDuration = '0s';
     key.style.backgroundColor = color;
