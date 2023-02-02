@@ -6,6 +6,8 @@
     color: var(--white);
 }
 
+
+
 :root {
     --black: #262322;
     --black-2: #1d2d44;
@@ -44,7 +46,10 @@
 }
 
 .langTitle {
-    border-top-right-radius: calc(var(--fontsizeMed) / 2);
+    border-radius: calc(var(--fontsizeMed) / 2);
+    text-align: center;
+    width: 40%;
+    margin: 5%;
 }
 
 .html {
@@ -176,7 +181,7 @@ img {
     width: 10vw;
     height: 10vw;
     background-color: var(--black);
-    border-radius: 100px;
+    border-radius: 1000px;
 
     cursor: pointer;
     
@@ -205,32 +210,21 @@ img {
 
 .colorSun {
     animation-name: colorSun;
-    animation-duration: 20s;
+    animation-duration: 1s;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
     transition-timing-function: ease;
 }
 
 
 @keyframes colorSun {
-    0% {
+    from {
         box-shadow:
-        0 0 10vw var(--red);
+        0 0 1vw var(--accent);
     }
-    25% {
+    to {
         box-shadow:
-        0 0 10vw var(--green-2);
-    }
-    50% {
-        box-shadow:
-        0 0 10vw var(--yellow);
-    }
-    75% {
-        box-shadow:
-        0 0 10vw var(--blue);
-    }
-    100% {
-        box-shadow:
-        0 0 10vw var(--red);
+        0 0 2vw var(--accent);
     }
 }
 
@@ -278,6 +272,7 @@ nav {
 	align-items: flex-end;
 	align-content: stretch;
 
+    z-index: 10;
 
     position: fixed;
     top: -10vh;
@@ -290,9 +285,8 @@ nav {
     margin: 15%;
 }
 
-#usenavbut:hover {
-    box-shadow: var(--accent) 1vh 1vh 2vh;
-    
+#usenavbut:hover > div{
+    transform: scale(120%);
 }
 
 
@@ -531,6 +525,7 @@ nav {
     height: 100%;
 
     display: flex;
+
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -538,8 +533,18 @@ nav {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 48%;
     height: 100%;
+}
+
+.row-100 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #projects {

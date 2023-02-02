@@ -26,7 +26,7 @@ function usenav() {
             document.querySelector('#pagecontent').style.height = 'var(--heightPageContentNav)'
             document.querySelector('#usenavbut').style.transform = 'var(--translateNavBar)'
             document.querySelector('#usenavbut').style.width = 'var(--widthUseNavBut)'
-            document.querySelector('#usenavbutsvg').style.transform = 'rotate(180deg)'
+            document.querySelector('#usenavbutsvg').style.transform = 'rotate(-180deg)'
             navopen = false;
             keyunlock = false;
             let w = window.innerWidth;
@@ -203,15 +203,15 @@ function setpage(id) {
 
 const projectTitle = [
     "<span class='naamColor'>Noud</span> als software developer:",
-    "Mastermind",
+    "Talen",
     "Mini consoles",
     "Project 4",
     "Project 5",
     "Project 6"
 ]
 const projectPara = [
-    "Ik ben een eerste jaars software developer student, op mbo roc Nijmegen, met ervaring in <span class='html langTitle'>HTML</span>, <span class='css langTitle'>CSS</span>, <span class='js langTitle'>JavaScript</span> en <span class='java langTitle'><span class='javaJ'>J</span>ava</span>. <br> <br> Ook ben ik buiten mijn opleiding <span class='lua langTitle'>Lua</span> aan het leren.",
-    "Het eerste project, Mastermind, kwam van een school opdracht: <br> Het namaken van mastermind in java. <br> <br> ",
+    "Ik ben een eerste jaars software developer, met hart voor: <br> <br> <span class='naamColor'>Design</span>. <br> <br> <span class='naamColor'>Functionaliteit</span>. <br> <br> <span class='naamColor'>User experience</span>. <br><br>",
+    "Talen waarvan ik ervaring heb zijn: <br><br> <div class='row-100'><div class='html langTitle'>HTML</div><br> <div class='css langTitle'>CSS</div><br> <div class='js langTitle'>JavaScript</div><br> <div class='java langTitle'><span class='javaJ'>J</span>ava</div><div class='langTitle lua'>Lua</div></div>",
     "Project 3",
     "Project 4",
     "Project 5",

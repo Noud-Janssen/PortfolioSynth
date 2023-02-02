@@ -29,6 +29,10 @@
             width: 90vw;
         }
 
+        #homeFoto {
+            height: 50vh;
+        }
+
         .content {
             height: 90vh;
         }
