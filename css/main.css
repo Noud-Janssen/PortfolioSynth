@@ -120,7 +120,6 @@ a:hover {
 
 .naamColor {
     color: var(--accent);
-    text-decoration: underline var(--white);
 }
 
 i {

@@ -212,7 +212,7 @@ const projectTitle = [
     "Project 6"
 ]
 const projectPara = [
-    "Ik ben een eerste jaars software developer, met hart voor: <br> <span class='naamColor'>Design</span>. <br> <span class='naamColor'>Functionaliteit</span>. <br> <span class='naamColor'>User experience</span>. <br><br> Deze kwaliteiten komen goed van pas, aangezien ik de <span class='naamColor'>front-end</span> development kant op wil gaan.",
+    "Ik ben een eerstejaars software developer, met hart voor: <br> <span class='naamColor'>Design</span>. <br> <span class='naamColor'>Functionaliteit</span>. <br> <span class='naamColor'>User experience</span>. <br><br> Deze kwaliteiten komen goed van pas, aangezien ik de <span class='naamColor'>front-end</span> development kant op wil gaan.",
     "Talen waarvan ik ervaring heb zijn: <br><br> <div class='row-100'><div class='html langTitle'>HTML</div><br> <div class='css langTitle'>CSS</div><br> <div class='js langTitle'>JavaScript</div><br> <div class='java langTitle'><span class='javaJ'>J</span>ava</div><div class='langTitle lua'>Lua</div></div>",
     "In mijn vrije tijd ben ik bezig met simpele games te maken, zo ook deze 'mini console'. <br><br>Een web-based gamboy clone, welke simpele games speelt. <br><br>(Nog work-in-progres) ",
     "Project 4",
@@ -221,7 +221,7 @@ const projectPara = [
 ]
 
 const projectTitleMusic = [
-    "<span class='naamColor'>Noud</span> als Muziekant:",
+    "<span class='naamColor'>Noud</span> als Muzikant:",
     "Les geven",
     "Slagwerker",
     "Componist",
@@ -229,10 +229,10 @@ const projectTitleMusic = [
     "Project 6"
 ]
 const projectParaMusic = [
-    "Muziek is al heel mijn leven lang belangerijk, zolang ik me kan herrineren ben ik bezig met het spelen, schrijven en luisteren naar muziek. <br> <br>Het behalen van C diploma melodisch slagwerk en muziek examen HAVO heeft ervoor gezorgd dat muziek voor mij als tweede taal voelt. ",
-    "Met veel plezier geef ik slagwerk les, gefocust op straat marsen, voor leerlingen van muziekvereneging Ons Genoegen. <br><br>",
-    "Ik speel als slagwerker bij muziek vereneging Ons Genoegen. Bij het eerste devisie slagwerk corps en bij de eerste devisie fanfare corps.<br><br>Ik ben het meest gefocust op <span class='naamColor'>melodisch</span> slagwerk, al zal ik ongestemd slagwerk zeker niet laten liggen als die moet worden ingevuld.",
-    "Als eind opdracht voor de HAVO, werd ons opgedragen om een compositie te schrijven. <br><br>Ik kan met trots zeggen dat ik deze opdracht met een 9.5 heb afgerond.<br><br> Deze opdracht heeft voor mij het vuurtje aangestoken, en ben sindsdien niet meer gestopt met het schrijven van muziek. Vandaar ook de droom om te werken als klassiek/tv/game componist.",
+    "Muziek is al heel mijn leven lang belangerijk, zolang ik me kan herinneren ben ik bezig met het spelen, schrijven en luisteren naar muziek. <br> <br>Het behalen van C-diploma melodisch slagwerk en muziek examen HAVO heeft ervoor gezorgd dat muziek voor mij als tweede taal voelt. ",
+    "Met veel plezier geef ik slagwerk les gefocust op straatmarsen voor leerlingen van muziekvereneging Ons Genoegen. <br><br>",
+    "Ik speel als slagwerker bij muziekvereneging Ons Genoegen. Bij het eerste divisie slagwerk corps en bij de eerste divisie fanfare corps.<br><br>Ik ben het meest gefocust op <span class='naamColor'>melodisch</span> slagwerk, al zal ik ongestemde slagwerk partijen zeker niet links laten liggen.",
+    "Als eindopdracht voor de HAVO, werd ons opgedragen om een compositie te schrijven. <br><br>Ik kan met trots zeggen dat ik deze opdracht met een 9.5 heb afgerond.<br><br> Deze opdracht heeft voor mij het vuurtje aangestoken, en ben sindsdien niet meer gestopt met het schrijven van muziek. Vandaar ook de droom om te werken als klassiek/tv/game componist.",
     "Project 5",
     "Projct 6"
 ]
