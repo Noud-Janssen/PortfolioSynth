@@ -1,7 +1,7 @@
 @media only screen and (orientation: landscape) {
     @media only screen and (max-height: 600px) {
         :root {
-            --heightPageContent: 90vh;
+            --heightPageContent: 90svh;
         }
 
         .navbut {
@@ -9,7 +9,7 @@
         }
 
         #usenavbut {
-            left: -10vh;
+            left: -10svh;
             right: auto;
         }
 
@@ -20,9 +20,9 @@
 
         .keyboard {
             left: auto;
-            bottom: 1vh;
+            bottom: 1svh;
             right: 0vw;
-            max-width: 100vh;
+            max-width: 100svh;
         }
 
         #pagecontent {
@@ -30,11 +30,11 @@
         }
 
         #homeFoto {
-            height: 50vh;
+            height: 50svh;
         }
 
         .content {
-            height: 90vh;
+            height: 90svh;
         }
 
         .col-80 {
@@ -42,11 +42,11 @@
         }
 
         .col-20 {
-            height: 30vh;
+            height: 30svh;
             flex-direction: row;
             flex-wrap: wrap;
             width: var(--widthKeyB);
-            max-width: 100vh;
+            max-width: 100svh;
 
             position: fixed;
             right: 1vw;

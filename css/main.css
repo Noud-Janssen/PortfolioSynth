@@ -19,15 +19,15 @@
     --blue: blue;
     --yellow: yellow;
 
-    --widthKey: calc(6vh);
-    --heightKey: calc(6vh * 2.5);
-    --bordMarKey: calc(1.5vh);
+    --widthKey: calc(6svh);
+    --heightKey: calc(6svh * 2.5);
+    --bordMarKey: calc(1.5svh);
 
-    --heightPageContent: calc(95vh - var(--heightKeyB));
-    --topPageContent: 5vh;
+    --heightPageContent: calc(95svh - var(--heightKeyB));
+    --topPageContent: 5svh;
 
-    --heightPageContentNav: 80vh;
-    --topPageContentNav: 15vh;
+    --heightPageContentNav: 80svh;
+    --topPageContentNav: 15svh;
 
     --leftContent: -90vw;
 
@@ -35,14 +35,14 @@
     --widthKeyB: calc((var(--widthKey) + var(--bordMarKey) * 4) * 7);
 
     --fontsizeKey: 35px;
-    --fontsizeMed: calc(3vh);
-    --fontsizeBig: 5vh;
+    --fontsizeMed: calc(3svh);
+    --fontsizeBig: 5svh;
     --fontsizeSmall: 25px;
 
 
     /** transform nav **/
-    --translateNavBar: translatey(10vh);
-    --widthUseNavBut: 20vh;
+    --translateNavBar: translatey(10svh);
+    --widthUseNavBut: 20svh;
 }
 
 .langTitle {
@@ -87,7 +87,7 @@ body {
 
 canvas {
     position: fixed;
-    top: 50vh;
+    top: 50svh;
     width: 50vw;
 }
 
@@ -192,19 +192,19 @@ img {
 }
 
 .dispenseParent:hover .dispense1 {
-    transform: translate(-1vw, -1.5vh);
+    transform: translate(-1vw, -1.5svh);
 }
 .dispenseParent:hover .dispense2 {
-    transform: translate(-0.5vw, 1.3vh);
+    transform: translate(-0.5vw, 1.3svh);
 }
 .dispenseParent:hover .dispense3 {
-    transform: translate(0vw, -0.8vh);
+    transform: translate(0vw, -0.8svh);
 }
 .dispenseParent:hover .dispense4 {
-    transform: translate(0.5vw, 0.7vh);
+    transform: translate(0.5vw, 0.7svh);
 }
 .dispenseParent:hover .dispense5 {
-    transform: translate(1vw, -1.5vh);
+    transform: translate(1vw, -1.5svh);
 }
 
 .colorSun {
@@ -241,11 +241,11 @@ p {
 nav {
     background-color: var(--white);
     width: 100vw;
-    height: 11vh;
+    height: 11svh;
 
     position: fixed;
 
-    top: -11vh;
+    top: -11svh;
 
     display: flex;
 	flex-direction: row;
@@ -265,8 +265,8 @@ nav {
 
     border-bottom-right-radius: 10px;
 
-    width: 20vh;
-    height: 20vh;
+    width: 20svh;
+    height: 20svh;
 
     transform: translateY(-100%);
 
@@ -280,8 +280,8 @@ nav {
     z-index: 10;
 
     position: fixed;
-    top: -10vh;
-    left: -10vh;
+    top: -10svh;
+    left: -10svh;
 
     cursor: pointer;
 }
@@ -304,13 +304,13 @@ nav {
     border: none;
     background: none;
     width: 10%;
-    height: 10vh;
+    height: 10svh;
     cursor: pointer;
     color: var(--black);
 }
 
 .navbutSelected {
-    border-bottom: var(--accent) 1vh solid;
+    border-bottom: var(--accent) 1svh solid;
     color: var(--accent);
     font-size: calc(var(--fontsizeMed) * 1) ;
 }
@@ -319,7 +319,7 @@ nav {
 
 .introScherm {
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
 
     position: fixed;
 
@@ -361,7 +361,7 @@ nav {
 
 #landingpage {
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     background-color: var(--black);
 
     position: fixed;
@@ -395,7 +395,7 @@ nav {
 }
 
 .lang {
-    font-size: 3vh;
+    font-size: 3svh;
     width: 40%;
     height: 80%;
 
@@ -413,7 +413,7 @@ nav {
 #bladmuziek {
     background-image: url(../assets/images/bladmuziekLandingpage.svg);
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     
     position: fixed;
     background-size: contain;
@@ -438,13 +438,13 @@ nav {
 
 #textNav {
     width: 100vw;
-    top: 15vh;
+    top: 15svh;
 
     animation-delay: 2s;
 }
 
 #textNavBut {
-    top: 25vh;
+    top: 25svh;
     left: 5vw;
 }
 
@@ -508,7 +508,7 @@ nav {
     padding-left: 15px;
     left: 100vw;
 
-    height: calc(95vh - var(--heightKeyB));
+    height: calc(95svh - var(--heightKeyB));
 
     display: flex;
     flex-direction: row;
@@ -620,7 +620,7 @@ nav {
 .keyboard {
     position: fixed;
     left: calc(50vw - (var(--widthKeyB) / 2));
-    bottom: 1vh;
+    bottom: 1svh;
     width: var(--widthKeyB);
     height: var(--heightKeyB);
 
