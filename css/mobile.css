@@ -222,5 +222,12 @@
         width: 20%;
         height: 100%;
     }
+
+    .langTitle {
+        border-radius: calc(var(--fontsizeMed) / 2);
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+    }
     
 }

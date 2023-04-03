@@ -213,7 +213,7 @@ const projectTitle = [
 ]
 const projectPara = [
     "Ik ben een eerstejaars software developer, met hart voor: <br> <span class='naamColor'>Design</span>. <br> <span class='naamColor'>Functionaliteit</span>. <br> <span class='naamColor'>User experience</span>. <br><br> Deze kwaliteiten komen goed van pas, aangezien ik de <span class='naamColor'>front-end</span> development kant op wil gaan.",
-    "Talen waarvan ik ervaring heb zijn: <br><br> <div class='row-100'><div class='html langTitle'>HTML</div><br> <div class='css langTitle'>CSS</div><br> <div class='js langTitle'>JavaScript</div><br> <div class='java langTitle'><span class='javaJ'>J</span>ava</div><div class='langTitle lua'>Lua</div></div>",
+    "Talen waar ik ervaring in heb: <br><br> <div class='row-100'><div class='html langTitle'>HTML</div><br> <div class='css langTitle'>CSS</div><br> <div class='js langTitle'>JavaScript</div><br> <div class='java langTitle'><span class='javaJ'>J</span>ava</div><div class='langTitle lua'>Lua</div></div>",
     "In mijn vrije tijd ben ik bezig met simpele games te maken, zo ook deze 'mini console'. <br><br>Een web-based gamboy clone, welke simpele games speelt. <br><br>(Nog work-in-progres) ",
     "Project 4",
     "Project 5",

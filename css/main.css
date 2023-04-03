@@ -14,6 +14,8 @@
     --accent: #CC5803;
     --white: #F2E5D7;
 
+
+
     --red: red;
     --green-2: green;
     --blue: blue;
@@ -138,6 +140,8 @@ img {
     animation-name: FromRight;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
+
+    width: auto;
 }
 
 @keyframes FromRight {
